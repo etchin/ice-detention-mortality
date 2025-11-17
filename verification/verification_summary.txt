@@ -1,0 +1,4 @@
+FY2018–2025 deaths: 77
+Local PDFs present: 77
+HTTP 200s: 77
+FOIA local present: True, status: 200, downloaded: True
