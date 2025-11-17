@@ -1,0 +1,245 @@
+Admin_by_date,days_into_admin,cum_deaths
+Biden,10,1
+Biden,16,2
+Biden,54,3
+Biden,195,4
+Biden,254,5
+Biden,534,6
+Biden,581,7
+Biden,631,8
+Biden,774,9
+Biden,804,10
+Biden,884,11
+Biden,991,12
+Biden,1027,13
+Biden,1048,14
+Biden,1050,15
+Biden,1129,16
+Biden,1142,17
+Biden,1181,18
+Biden,1184,19
+Biden,1218,21
+Biden,1242,22
+Biden,1326,23
+Biden,1376,24
+Biden,1381,25
+Biden,1426,26
+Bush,990,1
+Bush,1018,2
+Bush,1064,3
+Bush,1080,4
+Bush,1092,5
+Bush,1108,6
+Bush,1119,7
+Bush,1133,8
+Bush,1138,10
+Bush,1141,11
+Bush,1145,12
+Bush,1149,13
+Bush,1154,14
+Bush,1183,15
+Bush,1207,16
+Bush,1225,18
+Bush,1241,19
+Bush,1242,20
+Bush,1285,21
+Bush,1289,22
+Bush,1309,23
+Bush,1310,24
+Bush,1311,25
+Bush,1340,26
+Bush,1343,27
+Bush,1344,28
+Bush,1361,29
+Bush,1373,30
+Bush,1381,31
+Bush,1384,32
+Bush,1402,33
+Bush,1410,34
+Bush,1425,35
+Bush,1445,37
+Bush,1449,38
+Bush,1472,39
+Bush,1474,40
+Bush,1488,41
+Bush,1517,42
+Bush,1538,43
+Bush,1582,44
+Bush,1600,45
+Bush,1603,46
+Bush,1628,47
+Bush,1693,48
+Bush,1711,49
+Bush,1717,50
+Bush,1744,51
+Bush,1760,52
+Bush,1777,53
+Bush,1789,54
+Bush,1793,55
+Bush,1841,56
+Bush,1850,57
+Bush,1883,58
+Bush,1895,59
+Bush,1900,60
+Bush,1919,61
+Bush,1947,62
+Bush,1960,63
+Bush,1984,64
+Bush,2033,65
+Bush,2060,66
+Bush,2069,67
+Bush,2078,68
+Bush,2082,69
+Bush,2083,70
+Bush,2129,71
+Bush,2142,72
+Bush,2153,73
+Bush,2189,74
+Bush,2214,75
+Bush,2321,76
+Bush,2372,77
+Bush,2390,78
+Bush,2392,79
+Bush,2396,80
+Bush,2510,81
+Bush,2559,82
+Bush,2570,83
+Bush,2599,84
+Bush,2671,85
+Bush,2708,86
+Bush,2715,87
+Bush,2726,88
+Bush,2739,89
+Bush,2755,90
+Bush,2761,91
+Bush,2816,92
+Bush,2853,93
+Bush,2859,94
+Bush,2865,95
+Bush,2869,96
+Bush,2898,97
+Bush,2906,98
+Bush,2914,99
+Obama,18,1
+Obama,50,2
+Obama,110,3
+Obama,185,4
+Obama,206,5
+Obama,253,6
+Obama,272,7
+Obama,305,8
+Obama,409,9
+Obama,416,10
+Obama,417,11
+Obama,472,12
+Obama,512,13
+Obama,543,14
+Obama,654,15
+Obama,655,16
+Obama,702,17
+Obama,723,18
+Obama,741,19
+Obama,764,20
+Obama,789,21
+Obama,889,22
+Obama,918,23
+Obama,979,24
+Obama,985,25
+Obama,988,26
+Obama,1013,27
+Obama,1063,28
+Obama,1092,29
+Obama,1139,30
+Obama,1178,31
+Obama,1226,32
+Obama,1433,33
+Obama,1480,34
+Obama,1535,35
+Obama,1556,36
+Obama,1559,37
+Obama,1561,38
+Obama,1603,39
+Obama,1653,40
+Obama,1686,41
+Obama,1737,42
+Obama,1850,43
+Obama,1859,44
+Obama,1908,45
+Obama,1999,46
+Obama,2021,47
+Obama,2109,48
+Obama,2267,49
+Obama,2284,50
+Obama,2311,51
+Obama,2340,52
+Obama,2354,53
+Obama,2428,54
+Obama,2528,55
+Obama,2558,56
+Obama,2613,58
+Obama,2634,59
+Obama,2655,60
+Obama,2658,61
+Obama,2689,62
+Obama,2701,63
+Obama,2746,64
+Obama,2807,65
+Obama,2834,66
+Obama,2866,67
+Obama,2868,68
+Trump 1,52,1
+Trump 1,67,2
+Trump 1,83,3
+Trump 1,115,4
+Trump 1,116,5
+Trump 1,131,6
+Trump 1,445,7
+Trump 1,481,8
+Trump 1,490,9
+Trump 1,508,10
+Trump 1,536,11
+Trump 1,551,12
+Trump 1,650,13
+Trump 1,667,14
+Trump 1,679,15
+Trump 1,803,16
+Trump 1,833,17
+Trump 1,891,18
+Trump 1,915,19
+Trump 1,963,20
+Trump 1,984,21
+Trump 1,998,22
+Trump 1,1065,23
+Trump 1,1073,24
+Trump 1,1100,25
+Trump 1,1102,26
+Trump 1,1126,27
+Trump 1,1143,28
+Trump 1,1153,29
+Trump 1,1156,30
+Trump 1,1202,31
+Trump 1,1213,32
+Trump 1,1220,33
+Trump 1,1269,34
+Trump 1,1272,35
+Trump 1,1293,37
+Trump 1,1298,38
+Trump 1,1316,39
+Trump 1,1340,40
+Trump 1,1345,41
+Trump 1,1427,42
+Trump 2,3,1
+Trump 2,9,2
+Trump 2,31,3
+Trump 2,78,4
+Trump 2,86,5
+Trump 2,95,6
+Trump 2,105,7
+Trump 2,138,8
+Trump 2,154,9
+Trump 2,157,10
+Trump 2,180,11
+Trump 2,197,12
+Trump 2,223,13
+Trump 2,231,14
+Trump 2,245,15
