@@ -1,6 +1,6 @@
 # Source Documents Guide
 
-This document provides complete information on all primary data sources used in this analysis, with direct download links.
+This document provides complete information on all primary data sources used in this analysis, with direct download links. ICE sources include per-death PDFs; CBP sources are counts-only (no per-death detail) and are not covered by the verification scripts.
 
 ---
 
@@ -30,13 +30,13 @@ This document provides complete information on all primary data sources used in 
 
 **Description:** Official ICE webpage listing all detainee deaths by fiscal year from FY2018 through FY2025. Each death links to an individual death report PDF.
 
-**Data Extracted:** All 77 deaths from FY2018-2025 are included in `all_250_deaths_detailed.csv` with individual PDF URLs for each death.
+**Data Extracted:** All 76 deaths from FY2018-2025 are included in `all_250_deaths_detailed.csv` with individual PDF URLs for each death.
 
 ---
 
 ## Individual Death Reports (FY2018-2025)
 
-Each of the 77 deaths from FY2018-2025 has an individual death report PDF available at ICE.gov. The URLs for all individual reports are included in the `PDF_URL` column of `all_250_deaths_detailed.csv`.
+Each of the 76 deaths from FY2018-2025 has an individual death report PDF available at ICE.gov. The URLs for all individual reports are included in the `PDF_URL` column of `all_250_deaths_detailed.csv`.
 
 **URL Pattern:**
 ```
@@ -68,7 +68,18 @@ https://www.ice.gov/doclib/foia/reports/ddr[LastName][FirstName].pdf
 ### FY2025: TRAC Immigration
 **Source:** Transactional Records Access Clearinghouse
 **URL:** https://tracreports.org/reports/753/
-**Note:** FY2025 ADP is estimated at 60,000 based on reported detention levels in January 2025
+**Note:** FY2025 ADP uses TRAC daily-series average (≈48,984) with sensitivities (Jan 12 snapshot 39,703; CY mean ≈51,130)
+
+---
+
+## CBP Sources (counts-only; not covered by verification scripts)
+
+### CBP OPR “CBP-Related Deaths” Reports (counts, no per-death detail)
+- FY2021: https://www.cbp.gov/document/report/fiscal-year-2021-office-professional-responsibility-cbp-related-deaths-report  
+- FY2022: https://www.cbp.gov/document/report/office-professional-responsibility-cbp-related-deaths-report-fy2022  
+- FY2023: https://www.cbp.gov/document/report/fiscal-year-2023-office-professional-responsibility-cbp-related-deaths-report  
+
+**Data Extracted:** Counts only (total, in-custody, CBP-involved, additional) in `data/cbp_deaths_summary.csv`. No age/sex/location/ADP available; not pooled with ICE and not validated by the ICE verification scripts.
 
 ---
 
@@ -140,4 +151,4 @@ For questions about specific deaths or to request additional information:
 
 ---
 
-**Last Updated:** November 15, 2025
+**Last Updated:** December 2025
