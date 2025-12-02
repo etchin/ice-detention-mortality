@@ -40,15 +40,6 @@ Outputs land in `manuscript/` (figures) and `data/` (derived CSVs).
 
 ---
 
-## Key files for readers
-- `manuscript/MANUSCRIPT.md` – main text (AJPH style)
-- `manuscript/APPENDIX.md` – methods, STROBE, reproducibility, full A9 index
-- `data/cbp_deaths_summary.csv` – CBP counts (FY2021–FY2023)
-- `manuscript/Figure_CBP.png` – CBP counts figure
-- `manuscript/Figure2.png` – ICE multi-panel (A: COVID vs non-COVID deaths; B: ADP; C: mortality rate), FY start=2004, axes at zero, admin demarcations
-
----
-
 ## Verification notes
 - ICE source PDFs are mirrored in `death_report_pdfs/`; URLs also in `all_250_deaths_detailed.csv`.
 - FOIA/DDR harmonization issues and suspected under-reporting (minors, post-release, ATD) are documented in the manuscript limitations and appendix under “Under‑reporting risk.”
