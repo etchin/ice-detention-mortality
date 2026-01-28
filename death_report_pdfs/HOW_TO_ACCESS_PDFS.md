@@ -2,7 +2,7 @@
 
 ## Important Note
 
-All source PDFs (FOIA 2003-2017 master file and 77 individual FY2018-2025 reports) have been downloaded to this folder for offline verification. The URLs remain publicly accessible in case new versions are posted.
+All source PDFs (FOIA 2003-2017 master file and 94 individual FY2018-2025 reports) have been downloaded to this folder for offline verification. The URLs remain publicly accessible in case new versions are posted.
 
 ---
 
@@ -32,7 +32,7 @@ Once the PDF opens in your browser:
 
 ## Method 2: Access All PDFs from ICE Website
 
-### For FY2018-2025 Deaths (77 individual reports)
+### For FY2018-2025 Deaths (94 individual reports)
 
 1. Visit: https://www.ice.gov/detain/detainee-death-reporting
 2. Click on the fiscal year (e.g., "FY 2025", "FY 2024")
@@ -40,12 +40,12 @@ Once the PDF opens in your browser:
 4. The death report PDF will open in your browser
 5. Download and save
 
-### For FY2003-2017 Deaths (173 deaths in one PDF)
+### For FY2003-2017 Deaths (172 deaths in one PDF)
 
 1. Visit: https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf
 2. The master PDF will open (35 pages)
 3. Download and save
-4. All 173 deaths are listed in a table format
+4. All 172 deaths are listed in a table format
 
 ---
 
@@ -122,7 +122,7 @@ The cause of death information comes from:
 
 ### To Verify a Specific Death
 
-1. Open `../data/all_250_deaths_detailed.csv`
+1. Open `../data/all_266_deaths_detailed.csv`
 2. Find the death of interest
 3. Note the "Cause_of_Death" listed
 4. Click the "PDF_URL" to open the source document
@@ -132,17 +132,17 @@ The cause of death information comes from:
 
 ### To Verify All Deaths
 
-**FY2003-2017 (173 deaths):**
+**FY2003-2017 (172 deaths):**
 1. Download: https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf
 2. Compare the "FINAL CAUSE OF DEATH" column with the CSV
-3. All 173 deaths should match
+3. All 172 deaths should match
 
-**FY2018-2025 (77 deaths):**
+**FY2018-2025 (94 deaths):**
 1. Visit: https://www.ice.gov/detain/detainee-death-reporting
 2. Access each individual death report
 3. Check the "Medical History" section for cause of death
 4. Compare with the CSV
-5. All 77 deaths should match
+5. All 94 deaths should match
 
 ---
 
@@ -159,19 +159,19 @@ However, **all PDFs are publicly accessible** through a standard web browser.
 
 ## Bulk Download Instructions
 
-If you need to download all 77 individual PDFs:
+If you need to download all 94 individual PDFs:
 
 ### Option 1: Manual Download (Recommended)
 
 1. Open `../data/detailed_death_data.csv`
 2. For each row, click the PDF URL
 3. Save the PDF with a descriptive filename
-4. Estimated time: ~30-45 minutes for all 77
+4. Estimated time: ~30-45 minutes for all 94
 
 ### Option 2: Browser Extension
 
 Use a browser extension like "DownThemAll" or "Tab Save" to:
-1. Open all 77 URLs in separate tabs
+1. Open all 94 URLs in separate tabs
 2. Batch download all PDFs at once
 3. Requires: Firefox or Chrome with extension installed
 
@@ -179,10 +179,10 @@ Use a browser extension like "DownThemAll" or "Tab Save" to:
 
 ## Summary
 
-✓ **All 250 death reports are cached locally in this folder**  
+✓ **All 266 death reports are cached locally in this folder**  
 ✓ **URLs are provided in the CSV files for verification**  
-✓ **FY2003-2017: Single PDF with all 173 deaths**  
-✓ **FY2018-2025: 77 individual PDF reports**
+✓ **FY2003-2017: Single PDF with all 172 deaths**  
+✓ **FY2018-2025: 94 individual PDF reports**
 
 ---
 

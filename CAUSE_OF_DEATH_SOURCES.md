@@ -2,13 +2,13 @@
 
 ## Overview
 
-This document explains where the cause of death information comes from for all ICE deaths in the dataset (249 deaths; filename retained as `all_250_deaths_detailed.csv`). CBP deaths are counts-only and do not include causes.
+This document explains where the cause of death information comes from for all ICE deaths in the dataset (266 deaths; filename retained as `all_266_deaths_detailed.csv`). CBP deaths are counts-only and do not include causes.
 
 ---
 
 ## Source of Cause of Death Information
 
-### FY2003-2017 Deaths (173 deaths)
+### FY2003-2017 Deaths (172 deaths)
 
 **Source:** ICE Master PDF - "List of Deaths in ICE Custody - Data from: 10/01/2003 to 06/05/2017"
 
@@ -30,7 +30,7 @@ This document explains where the cause of death information comes from for all I
 
 ---
 
-### FY2018-2025 Deaths (76 deaths)
+### FY2018-2025 Deaths (94 deaths)
 
 **Source:** Individual ICE Death Report PDFs
 
@@ -58,14 +58,14 @@ This document explains where the cause of death information comes from for all I
 
 | Period | Source | Adjudication | Detail Level | Completeness |
 |:-------|:-------|:-------------|:-------------|:-------------|
-| FY2003-2017 | Master PDF | **Final** (adjudicated) | Moderate | 100% (all 173 have causes) |
-| FY2018-2025 | Individual PDFs | **Mixed** (some final, some preliminary) | High (when available) | 100% (all 76 have some information) |
+| FY2003-2017 | Master PDF | **Final** (adjudicated) | Moderate | 100% (all 172 have causes) |
+| FY2018-2025 | Individual PDFs | **Mixed** (some final, some preliminary) | High (when available) | 100% (all 94 have some information) |
 
 ---
 
 ## Key Findings
 
-### 1. All ICE Deaths Have Cause Information (249)
+### 1. All ICE Deaths Have Cause Information (266)
 
 Every ICE death in the dataset includes cause of death information, though the level of detail varies. CBP deaths are reported as counts only (no cause fields) and are tracked separately in `cbp_deaths_summary.csv`.
 
@@ -95,11 +95,11 @@ Individual death reports include:
 1. Download the master PDF: https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf
 2. Open the PDF and locate the death record
 3. Check the "FINAL CAUSE OF DEATH" column
-4. Compare with the cause listed in `all_250_deaths_detailed.csv`
+4. Compare with the cause listed in `all_266_deaths_detailed.csv`
 
 ### To Verify FY2018-2025 Causes
 
-1. Open `all_250_deaths_detailed.csv`
+1. Open `all_266_deaths_detailed.csv`
 2. Find the death of interest
 3. Copy the URL from the "PDF URL" column
 4. Open the PDF in a browser
@@ -136,7 +136,7 @@ When analyzing causes of death, prioritize deaths with final adjudicated causes 
 
 ### 2. Verify Recent Deaths
 
-For FY2018-2025 deaths (76), check the individual PDFs to determine whether the cause is preliminary or final.
+For FY2018-2025 deaths (94), check the individual PDFs to determine whether the cause is preliminary or final.
 
 ### 3. Request Updates
 
@@ -150,14 +150,14 @@ When categorizing causes (e.g., "cardiovascular," "suicide"), review the actual 
 
 ## Data Files
 
-**Primary Data (ICE):** `all_250_deaths_detailed.csv` (249 ICE deaths; filename retained)
+**Primary Data (ICE):** `all_266_deaths_detailed.csv` (266 ICE deaths; filename retained)
 - Column: "Cause_of_Death"
 - All ICE deaths included
 - Source PDFs listed in "PDF_URL" column
 
 **Source PDFs:**
 - FY2003-2017: Single master PDF (included in package)
-- FY2018-2025: 76 individual PDFs (included in `death_report_pdfs/`)
+- FY2018-2025: 94 individual PDFs (included in `death_report_pdfs/`)
 
 ---
 
@@ -174,6 +174,6 @@ All causes are verifiable by accessing the source PDFs listed in the dataset. Me
 ---
 
 **Last Updated:** December 2025
-**ICE Deaths:** 249 (causes available for 249)
+**ICE Deaths:** 266 (causes available for 266)
 **CBP Deaths:** Counts only (no causes; see `data/cbp_deaths_summary.csv`)
-**Final Adjudicated:** 173 (FY2003-2017) + mixed status FY2018-2025
+**Final Adjudicated:** 172 (FY2003-2017) + mixed status FY2018-2025
