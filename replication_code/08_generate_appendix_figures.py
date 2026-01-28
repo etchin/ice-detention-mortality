@@ -71,8 +71,8 @@ import numpy as np
 x = np.arange(3)
 width = 0.35
 fig, ax = plt.subplots(figsize=(8,5))
-ax.bar(x - width/2, op_all["Percent"], width, label="All years (N=250)")
-ax.bar(x + width/2, op_77["Percent"], width, label="FY2018–2025 (N=77)")
+ax.bar(x - width/2, op_all["Percent"], width, label=f"All years (N={len(all_df)})")
+ax.bar(x + width/2, op_77["Percent"], width, label=f"FY2018–2025 (N={len(subset77)})")
 ax.set_xticks(x)
 ax.set_xticklabels(["Private/Contracted","Government/Intergov","Other/Unstated"], rotation=15)
 ax.set_ylabel("Percent of deaths")
@@ -89,8 +89,8 @@ c_77 = dist_table(subset77, "Cause_Category").set_index("Category").reindex(cat_
 
 fig2, ax2 = plt.subplots(figsize=(9,5))
 x2 = np.arange(len(cat_order))
-ax2.bar(x2 - width/2, c_all["Percent"], width, label="All years (N=250)")
-ax2.bar(x2 + width/2, c_77["Percent"], width, label="FY2018–2025 (N=77)")
+ax2.bar(x2 - width/2, c_all["Percent"], width, label=f"All years (N={len(all_df)})")
+ax2.bar(x2 + width/2, c_77["Percent"], width, label=f"FY2018–2025 (N={len(subset77)})")
 ax2.set_xticks(x2)
 ax2.set_xticklabels(cat_order, rotation=20)
 ax2.set_ylabel("Percent of deaths")
@@ -101,4 +101,3 @@ fig2.savefig(os.path.join(OUT_DIR, "Appendix_Figure_A2_cause.png"), bbox_inches=
 plt.close(fig2)
 
 print("Wrote Appendix_Figure_A1_operator.png and Appendix_Figure_A2_cause.png to manuscript/")
-

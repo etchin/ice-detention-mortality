@@ -5,7 +5,7 @@ Analysis package for deaths in U.S. immigration custody. ICE deaths are fully en
 ---
 
 ## Contents (repo root)
-- `manuscript/` – `MANUSCRIPT.md`, `APPENDIX.md`, ICE figures (`Figure1.png`, `Figure2.png`, `Figure3.png`), CBP figure (`Figure_CBP.png`), appendix figures (`Appendix_Figure_A1_operator.png`, `Appendix_Figure_A2_cause.png`).
+- `manuscript/` – `MANUSCRIPT.md`, `APPENDIX.md`, ICE figures (`Figure1.png`, `Figure2.png`, `Figure3.png`), CBP figure (`Appendix_Figure_A3.png`), appendix figures (`Appendix_Figure_A1_operator.png`, `Appendix_Figure_A2_cause.png`).
 - `data/`
   - `all_250_deaths_detailed.csv` (ICE, 249 deaths; name retained for continuity)
   - `complete_death_records.csv`, `detailed_death_data.csv` (ICE subsets)
@@ -35,8 +35,17 @@ Outputs land in `manuscript/` (figures) and `data/` (derived CSVs).
 
 ## What’s in the analyses
 - **ICE (FY2004–FY2025):** 249 deaths with complete age/sex/facility/cause; ADP denominators; rates by FY and administration; sensitivity analyses (alt FY2025 denominators, COVID exclusions, bounds).
-- **CBP (FY2021–FY2023):** Counts-only from OPR reports; plotted separately (`Figure_CBP.png`). No ADP → no CBP mortality rates. Minors largely fall under CBP, not ICE.
+- **CBP (FY2021–FY2023):** Counts-only from OPR reports; plotted separately (`Appendix_Figure_A3.png`). No ADP → no CBP mortality rates. Minors largely fall under CBP, not ICE.
 - **Separation of systems:** ICE and CBP are not pooled; CBP results are descriptive and flagged as incomplete due to missing ADP and potential under-reporting of minors/post-release events.
+
+---
+
+## Key files for readers
+- `manuscript/MANUSCRIPT.md` – main text (AJPH style)
+- `manuscript/APPENDIX.md` – methods, STROBE, reproducibility, full A9 index
+- `data/cbp_deaths_summary.csv` – CBP counts (FY2021–FY2023)
+- `manuscript/Appendix_Figure_A3.png` – CBP counts figure
+- `manuscript/Figure2.png` – ICE multi-panel (A: COVID vs non-COVID deaths; B: ADP; C: mortality rate), FY start=2004, axes at zero, admin demarcations
 
 ---
 

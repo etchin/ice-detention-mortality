@@ -30,7 +30,7 @@ cutpoints = [
     ("Obama", datetime(2009, 1, 20), datetime(2017, 1, 19)),
     ("Trump 1", datetime(2017, 1, 20), datetime(2021, 1, 19)),
     ("Biden", datetime(2021, 1, 20), datetime(2025, 1, 19)),
-    ("Trump 2", datetime(2025, 1, 20), datetime(2025, 9, 30)),
+    ("Trump 2", datetime(2025, 1, 20), datetime(2025, 12, 31)),
 ]
 
 def admin_by_date(d):

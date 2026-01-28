@@ -20,7 +20,7 @@ df = df.sort_values('Date_of_Death')
 
 with open(OUT, 'w') as f:
     f.write('# Appendix A9 Index: Per-Death Primary-Source URLs\n\n')
-    f.write('This table lists every death (N = 250) with key details and the primary official source URL.\n\n')
+    f.write(f'This table lists every death (N = {len(df)}) with key details and the primary official source URL.\n\n')
     # Header
     f.write('| Name | Sex | Age | Country | Date of Death | Facility | Location | Type | Cause of Death | Source URL |\n')
     f.write('| :--- | :-- | --: | :------ | :------------ | :------ | :------- | :--- | :------------- | :--------- |\n')
