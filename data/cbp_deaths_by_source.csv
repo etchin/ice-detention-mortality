@@ -1,0 +1,12 @@
+fiscal_year,source,definition,total_deaths,in_custody_deaths,notes,url
+2016,BJS FDCRP,"Arrest-related deaths (includes in-custody)",10,0,"CBP subset from DCRA reporting",https://bjs.ojp.gov/content/pub/pdf/fdcda1617st.pdf
+2017,BJS FDCRP,"Arrest-related deaths (includes in-custody)",7,3,"CBP subset from DCRA reporting",https://bjs.ojp.gov/content/pub/pdf/fdcda1617st.pdf
+2018,BJS FDCRP,"Arrest-related deaths (includes in-custody)",10,2,"CBP subset from DCRA reporting",https://bjs.ojp.gov/media/65036/download
+2019,BJS FDCRP,"Arrest-related deaths (includes in-custody)",25,0,"CBP subset from DCRA reporting",https://bjs.ojp.gov/media/65036/download
+2020,BJS FDCRP,"Arrest-related deaths (includes in-custody)",19,2,"CBP subset from DCRA reporting",https://bjs.ojp.gov/content/pub/pdf/fdcda20st.pdf
+2021,BJS FDCRP,"Arrest-related deaths (includes in-custody)",49,1,"CBP subset from DCRA reporting",https://bjs.ojp.gov/document/fdcda21st.pdf
+2021,CBP OPR,"CBP-related deaths (broad: in-custody, CBP-involved, additional)",151,55,"OPR report; CBP-related categories",https://www.cbp.gov/document/report/fiscal-year-2021-office-professional-responsibility-cbp-related-deaths-report
+2022,BJS FDCRP,"Arrest-related deaths (includes in-custody)",44,0,"CBP subset from DCRA reporting",https://bjs.ojp.gov/document/fdcda22st.pdf
+2022,CBP OPR,"CBP-related deaths (broad: in-custody, CBP-involved, additional)",171,52,"OPR report; CBP-related categories",https://www.cbp.gov/document/report/office-professional-responsibility-cbp-related-deaths-report-fy2022
+2023,BJS FDCRP,"Arrest-related deaths (includes in-custody)",48,0,"CBP subset from DCRA reporting",https://bjs.ojp.gov/document/fdcda23st.pdf
+2023,CBP OPR,"CBP-related deaths (broad: in-custody, CBP-involved, additional)",180,55,"OPR report; CBP-related categories",https://www.cbp.gov/document/report/fiscal-year-2023-office-professional-responsibility-cbp-related-deaths-report

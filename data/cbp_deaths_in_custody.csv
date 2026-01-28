@@ -1,0 +1,99 @@
+Case_Number,Name,Age,Date,Location,State,Nationality,Incident_Type,Minor,US_Citizen_LPR,In_Custody,Off_Duty,Firearm,Wall_Related,Vehicle_Pursuit,Cross_Border_Shooting,Death_Immigration_Enforcement,Source,Date_Standardized,Year,SBCC_Cause_of_Death,SBCC_Description,In_SBCC
+346,Unknown,52,2025-03-26,Needles,CA,Chinese,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2025-03-26,2025,,,0
+349,Unknown,unknown,2024-10-24,Santa Teresa,NM,Mexican,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2024-10-24,2024,,,0
+337,Unknown,unknown,2024-07-18,Topawa,AZ,Unknown,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2024-07-18,2024,,,0
+319,Saifuddin Bepary,40,2024-03-12,Champlain,NY,Bangladeshi,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2024-03-12,2024,,,0
+315,Unknown,Infant,2024-02-26,Lukeville,AZ,Angolan,"1. In Custody
+2. Minor",1,0,1,0,0,0,0,0,0,ACLU,2024-02-26,2024,,,0
+314,Unknown,43,2024-02-17,Laredo,TX,U.S. Citizen,1. In Custody,0,1,1,0,0,0,0,0,0,ACLU,2024-02-17,2024,,,0
+305,Unknown,Infant,2023-09-23,"Nogales, AZ",AZ,Mexican,"1. Minor
+2. In Custody",1,0,1,0,0,0,0,0,0,ACLU,2023-09-23,2023,,,0
+301,Unkown,29,2023-08-27,"Harlingen, TX",TX,Honduran,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2023-08-27,2023,,,0
+285,"Anadith Danay Reyes
+Alvarez",8,2023-05-17,Harlingen,TX,Panamanian,"1. Minor
+2. In Custody",1,0,1,0,0,0,0,0,0,ACLU,2023-05-17,2023,,,0
+282,Unknown,Unknown,2023-04-03,San Luis,AZ,Mexican,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2023-04-03,2023,,,0
+266,Unknown,Unknown,2023-01-13,Buckeye,AZ,Mexican,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2023-01-13,2023,,,0
+263,Unknown,Unknown,2023-01-02,Eagle Pass,TX,Cuban,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2023-01-02,2023,,,0
+256,Manual González Morán,33,2022-10-04,Ysleta,TX,Mexican,"1. In Custody
+2. Firearm",0,0,1,0,1,0,0,0,0,ACLU,2022-10-04,2022,,,0
+250,Unknown,Unknown,2022-09-01,Lewiston,NY,United States,1. In Custody,0,1,1,0,0,0,0,0,0,ACLU,2022-09-01,2022,,,0
+249,Unknown,Unknown,2022-08-24,Carrizo Springs,TX,Mexican,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2022-08-24,2022,,,0
+231,Abigail Roman Aguilar,32,2022-05-24,Douglas,AZ,Mexican,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2022-05-24,2022,,,0
+214,Unknown,38,2022-01-12,San Diego,CA,Mexican,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2022-01-12,2022,,,0
+212,Unknown,Adult,2021-12-16,Sunland Park,NM,Mexican,1. Wall Related,0,0,1,0,0,0,0,0,0,ACLU,2021-12-16,2021,,,0
+208,Unknown,Minor,2021-11-22,McAllen,TX,Honduran,"1. Minor
+2. In Custody",1,0,1,0,0,0,0,0,0,ACLU,2021-11-22,2021,,,0
+207,Unknown,Minor,2021-11-20,McAllen,TX,Mexican,"1. Minor
+2. In Custody",1,0,1,0,0,0,0,0,0,ACLU,2021-11-20,2021,,,0
+206,Unknown,Infant,2021-11-19,McAllen,TX,Venezuelan,"1. Minor
+2. In Custody",1,0,1,0,0,0,0,0,0,ACLU,2021-11-19,2021,,,0
+198,Unknown,Infant,2021-09-20,Rio Grande City,TX,Honduran,"1. Minor
+2. In Custody",1,0,1,0,0,0,0,0,0,ACLU,2021-09-20,2021,,,0
+194,Unknown,Adult,2021-09-04,Laredo,TX,Mexican,1. In custody,0,0,1,0,0,0,0,0,0,ACLU,2021-09-04,2021,,,0
+191,Unknown,Adult,2021-08-28,Sullivan City,TX,Unknown,"1. Death in Presence of
+Immigration Enforcement",0,0,1,0,0,0,0,0,1,ACLU,2021-08-28,2021,,,0
+188,Unknown,Adult,2021-08-19,Yuma,AZ,Nicaraguan,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2021-08-19,2021,,,0
+181,Unknown,Adult,2021-08-02,Eagle Pass,TX,Salvadoran,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2021-08-02,2021,,,0
+180,Unknown,Adult,2021-07-31,Harlingen,TX,Honduran,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2021-07-31,2021,,,0
+164,Unknown,Adult,2021-06-07,Arvica,AZ,Mexican,"1. Death in Presence of
+Immigration Enforcement",0,0,1,0,0,0,0,0,1,ACLU,2021-06-07,2021,,,0
+159,Unknown,,2021-04-25,Hebbronville,TX,Mexican,"1. Death in Presence of
+Immigration Enforcement",0,0,1,0,0,0,0,0,1,ACLU,2021-04-25,2021,,,0
+157,Unknown,Adult,2021-04-16,Hidalgo,TX,Honduran,"1. Death in Presence of
+Immigration Enforcement",0,0,1,0,0,0,0,0,1,ACLU,2021-04-16,2021,,,0
+154,Unknown,29,2021-03-27,Tucson,AZ,Guatemalan,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2021-03-27,2021,,,0
+153,Unknown,Infant,2021-03-18,Hidalgo,TX,Unknown,"1. Minor (infant)
+2. Death in Presence of
+Immigration Enforcement",1,0,1,0,0,0,0,0,1,ACLU,2021-03-18,2021,,,0
+152,Unknown,"N/A
+(adult)",2021-03-10,Eagle Pass,TX,Unknown,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2021-03-10,2021,,,0
+140,Unknown,30,2020-09-21,Tucson,AZ,Mexican,"1. In Custody
+2. Medical",0,0,1,0,0,0,0,0,0,ACLU,2020-09-21,2020,,,0
+138,Unknown,N/A (adult),2020-08-24,Edinburg,TX,Mexican,"1. In Custody
+2. Medical (COVID)",0,0,1,0,0,0,0,0,0,ACLU,2020-08-24,2020,,,0
+120,Unknown,61,2020-03-30,San Ysidro,CA,U.S.,"1. In Custody
+2. U.S. Citizen",0,1,1,0,0,0,0,0,0,ACLU,2020-03-30,2020,,,0
+117,Unknown,,2020-03-25,El Paso,TX,Unknown,"1. In Custody
+2. Firearm",0,0,1,0,1,0,0,0,0,ACLU,2020-03-25,2020,,,0
+116,Unknown,,2020-03-20,Cuevitas,TX,Mexican,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2020-03-20,2020,,,0
+115,Unknown,19,2020-03-07,Clint,TX,Guatemalan,"1. Wall Related
+2. In Custody",0,0,1,0,0,1,0,0,0,ACLU,2020-03-07,2020,,,0
+114,James Paul Markowitz,32,2020-02-04,Bracketville,TX,U.S.,"1. In Custody
+2. U.S. Citizen",0,1,1,0,0,0,0,0,0,ACLU,2020-02-04,2020,,,0
+113,Unknown,41,2019-12-25,Laredo,TX,Congolese,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2019-12-25,2019,,,0
+112,Unknown,42,2019-12-21,La Villa,TX,Mexican,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2019-12-21,2019,,,0
+110,Unknown,33,2019-10-26,Tubac,AZ,Mexican,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2019-10-26,2019,,,0
+109,Unknown,49,2019-10-21,Tucson,AZ,Mexican,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2019-10-21,2019,,,0
+108,Unknown,32,2019-08-01,Lordsburg,NM,Salvadoran,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2019-08-01,2019,,,0
+107,Unknown,52,2019-07-05,Tucson,AZ,Nicaraguan,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2019-07-05,2019,,,0
+105,Unknown,40,2019-06-03,Eagle Pass,TX,Honduran,In Custody,0,0,1,0,0,0,0,0,0,ACLU,2019-06-03,2019,,,0
+104,Unknown,33,2019-06-03,Roma,TX,Salvadoran,In Custody,0,0,1,0,0,0,0,0,0,ACLU,2019-06-03,2019,,,0
+103,"Carlos Gregorio Hernandez
+Vasquez",16,2019-05-20,Weslaco,TX,Guatemalan,"1. Minor
+2. In Custody",1,0,1,0,0,0,0,0,0,ACLU,2019-05-20,2019,,,0
+102,Unknown,2,2019-05-14,El Paso,TX,Guatemalan,"1. Minor
+2. In Custody",1,0,1,0,0,0,0,0,0,ACLU,2019-05-14,2019,,,0
+101,Juan de Leon Gutierrez,16,2019-04-30,Brownsville,TX,Guatemalan,"1. Minor
+2. In Custody",1,0,1,0,0,0,0,0,0,ACLU,2019-04-30,2019,,,0
+98,Unknown,40,2019-03-18,El Paso,TX,Mexican,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2019-03-18,2019,,,0
+97,Unknown,45,2019-02-18,McAllen,TX,Mexican,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2019-02-18,2019,,,0
+96,Felipe Alonozo- Gomez,8,2018-12-24,Alomogordo,NM,Guatemalan,"1. Minor
+2. In Custody",1,0,1,0,0,0,0,0,0,ACLU,2018-12-24,2018,,,0
+95,Jakelin Caal Maquin,7,2018-12-07,South of Lordsburg,NM,Guatemalan,"1. Minor
+2. In Custody",1,0,1,0,0,0,0,0,0,ACLU,2018-12-07,2018,,,0
+52,[Name not released],,2015-02-18,Marfa BP Station,TX,Mexican,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2015-02-18,2015,,,0
+46,[Name not released],36,2014-10-17,"Holding cell BP
+checkpoint between
+Carlsbad NM & El
+Paso",TX,Unknown,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2014-10-17,2014,,,0
+44,[Name not released],54,2014-09-05,"McAllen Station
+Processing Facility,",TX,Mexican,1. In Custody,0,0,1,0,0,0,0,0,0,ACLU,2014-09-05,2014,,,0
+37,Steven Keith,58,2013-12-25,"Campo Border Patrol
+Station near San
+Diego",CA,U.S.,"1. In Custody
+2. U.S. Citizen",0,1,1,0,0,0,0,0,0,ACLU,2013-12-25,2013,,,0
+33,[Name not released],51,2013-02-16,"San Ysidro, POE",CA,U.S.,"1. U.S. Citizen
+2. In custody",0,1,1,0,0,0,0,0,0,ACLU,2013-02-16,2013,,,0
+8,Roberto Pérez Pérez,63,2011-01-13,San Diego,CA,Mexican,"1. Other Use of Force
+2. In Custody",0,0,1,0,0,0,0,0,0,ACLU,2011-01-13,2011,,,0
