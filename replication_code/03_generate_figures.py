@@ -16,7 +16,7 @@ base_dir = os.path.join(os.path.dirname(__file__), "..", "data")
 mortality_df = pd.read_csv(os.path.join(base_dir, "mortality_rates_by_administration.csv"))
 deaths_df = pd.read_csv(os.path.join(base_dir, "complete_death_records.csv"))
 adp_df = pd.read_csv(os.path.join(base_dir, "average_daily_population.csv"))
-details_df = pd.read_csv(os.path.join(base_dir, "all_250_deaths_detailed.csv"))
+details_df = pd.read_csv(os.path.join(base_dir, "all_266_deaths_detailed.csv"))
 cbp_df = pd.read_csv(os.path.join(base_dir, "cbp_deaths_summary.csv"))
 
 # Figure 1

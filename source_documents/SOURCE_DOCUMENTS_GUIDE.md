@@ -6,13 +6,13 @@ This document provides complete information on all primary data sources used in 
 
 ## Primary Data Sources
 
-### 1. ICE Deaths 2003-2017 (173 deaths)
+### 1. ICE Deaths 2003-2017 (172 deaths)
 
 **Document:** List of Deaths in ICE Custody - Data from: 10/01/2003 to 06/05/2017
 
 **Download URL:** https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf
 
-**Description:** Official ICE FOIA release containing detailed information on all 173 in-custody deaths from October 1, 2003 through June 5, 2017. This 35-page PDF includes:
+**Description:** Official ICE FOIA release containing detailed information on all 172 in-custody deaths from October 1, 2003 through June 5, 2017. This 35-page PDF includes:
 - Name, sex, date of birth, country of citizenship
 - Date of death
 - Location of death (hospital)
@@ -20,7 +20,7 @@ This document provides complete information on all primary data sources used in 
 - Facility type
 - Cause of death
 
-**Data Extracted:** All 173 deaths are included in `all_250_deaths_detailed.csv`
+**Data Extracted:** All 172 deaths are included in `all_266_deaths_detailed.csv`
 
 ---
 
@@ -30,13 +30,13 @@ This document provides complete information on all primary data sources used in 
 
 **Description:** Official ICE webpage listing all detainee deaths by fiscal year from FY2018 through FY2025. Each death links to an individual death report PDF.
 
-**Data Extracted:** All 76 deaths from FY2018-2025 are included in `all_250_deaths_detailed.csv` with individual PDF URLs for each death.
+**Data Extracted:** All 94 deaths from FY2018-2025 are included in `all_266_deaths_detailed.csv` with individual PDF URLs for each death.
 
 ---
 
 ## Individual Death Reports (FY2018-2025)
 
-Each of the 76 deaths from FY2018-2025 has an individual death report PDF available at ICE.gov. The URLs for all individual reports are included in the `PDF_URL` column of `all_250_deaths_detailed.csv`.
+Each of the 94 deaths from FY2018-2025 has an individual death report PDF available at ICE.gov. The URLs for all individual reports are included in the `PDF_URL` column of `all_266_deaths_detailed.csv`.
 
 **URL Pattern:**
 ```
@@ -46,7 +46,7 @@ https://www.ice.gov/doclib/foia/reports/ddr[LastName][FirstName].pdf
 **Example:**
 - Mirimanian, Gourgen: https://www.ice.gov/doclib/foia/reports/ddrMirimanianGourgen.pdf
 
-**To Access:** See the `PDF_URL` column in `all_250_deaths_detailed.csv` for the complete list of all 77 individual death report URLs.
+**To Access:** See the `PDF_URL` column in `all_266_deaths_detailed.csv` for the complete list of all 94 individual death report URLs.
 
 ---
 
@@ -93,7 +93,7 @@ https://www.ice.gov/doclib/foia/reports/ddr[LastName][FirstName].pdf
    ```
 
 2. **Individual FY2018-2025 Death Reports:**
-   Use the URLs listed in `all_250_deaths_detailed.csv` (PDF_URL column)
+   Use the URLs listed in `all_266_deaths_detailed.csv` (PDF_URL column)
 
 ### Method 2: Browser Download
 
@@ -108,12 +108,12 @@ https://www.ice.gov/doclib/foia/reports/ddr[LastName][FirstName].pdf
 To verify the completeness and accuracy of the extracted data:
 
 1. **Compare death counts:**
-   - ICE 2003-2017 PDF: 173 deaths
-   - ICE FY2018-2025 webpage: 77 deaths
-   - Total: 250 deaths ✓
+   - ICE 2003-2017 PDF: 172 deaths
+   - ICE FY2018-2025 webpage: 94 deaths
+   - Total: 266 deaths ✓
 
 2. **Verify individual deaths:**
-   - Each death in `all_250_deaths_detailed.csv` includes the source PDF URL
+   - Each death in `all_266_deaths_detailed.csv` includes the source PDF URL
    - Cross-reference names, dates, and causes of death with source documents
 
 3. **Check for updates:**

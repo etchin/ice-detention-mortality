@@ -32,7 +32,7 @@ Data on in-custody deaths were compiled from two official ICE sources:
 1. Historical deaths (FY2004–2017): a 35‑page FOIA release listing all in‑custody deaths from October 1, 2003 through September 30, 2017.<sup>1</sup>
 2. Recent deaths (FY2018–2025): the ICE Detainee Death Reporting webpage, which provides individual death announcements and detailed reports.<sup>2</sup>
 
-We extracted all records and de‑duplicated on name and date of death to construct a complete dataset of 266 unique deaths from FY2004 through FY2025 (with calendar‑year 2025 updates). The dataset is provided in `complete_death_records.csv` and the fully detailed file in `all_250_deaths_detailed.csv` (file name retained from earlier versions; it contains 266 rows).
+We extracted all records and de‑duplicated on name and date of death to construct a complete dataset of 266 unique deaths from FY2004 through FY2025 (with calendar‑year 2025 updates). The dataset is provided in `complete_death_records.csv` and the fully detailed file in `all_266_deaths_detailed.csv` (file name retained from earlier versions; it contains 266 rows).
 
 **Data completeness.** Cause‑of‑death information is present for all 266 deaths. Dates of death are reconciled and complete. Age is missing for 1 death; facility location is complete for all years: FY2003–2017 values were computed from the FOIA table (date of birth and last detention location) and FY2018–2025 values were taken from individual reports.
 
@@ -42,7 +42,7 @@ Average Daily Population (ADP) is the standard denominator for custody mortality
 
 ### Data Quality Assurance
 
-We undertook several steps to ensure data quality and accuracy. First, annual death counts from raw extractions were cross‑checked against the final analytic tables. Second, deaths were assigned to administrations by actual date of death, and assignments were programmatically verified. Third, additional 2025 deaths were identified in public reporting to complete the CY2025 series; these records are linked in the per‑death index and included in the analytic dataset (32 total deaths in CY2025). Fourth, for FY2003–2017, we parsed the FOIA PDF using lattice‑based table extraction (camelot) to capture all 172 rows; ages were computed from dates of birth and death, and facility locations from “location of last detention.” Fuzzy string matching reconciled spelling variants (e.g., Jiminez/Jimenez). Final completeness checks confirm no missing values across sex, facility name, facility location, facility type, cause of death, and date of death in `all_250_deaths_detailed.csv`; age is missing for 1 record.
+We undertook several steps to ensure data quality and accuracy. First, annual death counts from raw extractions were cross‑checked against the final analytic tables. Second, deaths were assigned to administrations by actual date of death, and assignments were programmatically verified. Third, additional 2025 deaths were identified in public reporting to complete the CY2025 series; these records are linked in the per‑death index and included in the analytic dataset (32 total deaths in CY2025). Fourth, for FY2003–2017, we parsed the FOIA PDF using lattice‑based table extraction (camelot) to capture all 172 rows; ages were computed from dates of birth and death, and facility locations from “location of last detention.” Fuzzy string matching reconciled spelling variants (e.g., Jiminez/Jimenez). Final completeness checks confirm no missing values across sex, facility name, facility location, facility type, cause of death, and date of death in `all_266_deaths_detailed.csv`; age is missing for 1 record.
 
 For CBP, OPR reports provide aggregate counts only (no demographics) beginning in FY2021, while FDCRP statistical tables provide arrest‑related and in‑custody counts for FY2016–FY2023. These sources are not pooled and are presented as counts because CBP fiscal‑year ADP is not publicly released. A merged case‑level file (`cbp_deaths_merged.csv`, with a filtered `cbp_deaths_in_custody.csv`) reconciles ACLU and Southern Border Communities Coalition lists (624 unique CBP‑related deaths; 61 in‑custody) for transparency; because inclusion rules differ, these files are not used for rate estimation.
 
@@ -270,7 +270,7 @@ Legend. Operator-type groups are derived from facility categories reported by IC
 
 Legend. Federal Deaths in Custody Reporting Program (FDCRP) tables count arrest-related deaths (including use of force, pursuits, transport, and temporary holding) and in-custody deaths under a standardized federal definition. OPR “CBP-related deaths” are broader and include deaths in the presence of CBP personnel (e.g., rescues, environmental exposure, medical emergencies) as well as in-custody deaths; OPR series begin in FY2021. Fiscal-year CBP ADP is not publicly released, so results are presented as counts and not pooled with ICE.
 
-### eTable 11. Data dictionary for `all_250_deaths_detailed.csv`
+### eTable 11. Data dictionary for `all_266_deaths_detailed.csv`
 
 | Column | Definition |
 | :----- | :--------- |
