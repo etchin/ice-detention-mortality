@@ -8,7 +8,7 @@ BASE_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 OUT_DIR = os.path.join(os.path.dirname(__file__), "..", "manuscript")
 os.makedirs(OUT_DIR, exist_ok=True)
 
-all_path = os.path.join(BASE_DIR, "all_266_deaths_detailed.csv")
+all_path = os.path.join(BASE_DIR, "all_274_deaths_detailed.csv")
 detailed_path = os.path.join(BASE_DIR, "detailed_death_data.csv")
 
 all_df = pd.read_csv(all_path)
@@ -55,9 +55,9 @@ def dist_table(df: pd.DataFrame, col: str) -> pd.DataFrame:
 
 # Save distribution CSVs (optional artifacts)
 dist_table(all_df, "Cause_Category").to_csv(os.path.join(BASE_DIR, "_cause_distribution_all.csv"), index=False)
-dist_table(subset77, "Cause_Category").to_csv(os.path.join(BASE_DIR, "_cause_distribution_2018_2025.csv"), index=False)
+dist_table(subset77, "Cause_Category").to_csv(os.path.join(BASE_DIR, "_cause_distribution_2018_2026.csv"), index=False)
 dist_table(all_df, "Operator_Group").to_csv(os.path.join(BASE_DIR, "_operator_group_all.csv"), index=False)
-dist_table(subset77, "Operator_Group").to_csv(os.path.join(BASE_DIR, "_operator_group_2018_2025.csv"), index=False)
+dist_table(subset77, "Operator_Group").to_csv(os.path.join(BASE_DIR, "_operator_group_2018_2026.csv"), index=False)
 
 # Build figures
 plt.rcParams["figure.dpi"] = 300
@@ -72,7 +72,7 @@ x = np.arange(3)
 width = 0.35
 fig, ax = plt.subplots(figsize=(8,5))
 ax.bar(x - width/2, op_all["Percent"], width, label=f"All years (N={len(all_df)})")
-ax.bar(x + width/2, op_77["Percent"], width, label=f"FY2018–2025 (N={len(subset77)})")
+ax.bar(x + width/2, op_77["Percent"], width, label=f"FY2018–2026 (N={len(subset77)})")
 ax.set_xticks(x)
 ax.set_xticklabels(["Private/Contracted","Government/Intergov","Other/Unstated"], rotation=15)
 ax.set_ylabel("Percent of deaths")
@@ -90,7 +90,7 @@ c_77 = dist_table(subset77, "Cause_Category").set_index("Category").reindex(cat_
 fig2, ax2 = plt.subplots(figsize=(9,5))
 x2 = np.arange(len(cat_order))
 ax2.bar(x2 - width/2, c_all["Percent"], width, label=f"All years (N={len(all_df)})")
-ax2.bar(x2 + width/2, c_77["Percent"], width, label=f"FY2018–2025 (N={len(subset77)})")
+ax2.bar(x2 + width/2, c_77["Percent"], width, label=f"FY2018–2026 (N={len(subset77)})")
 ax2.set_xticks(x2)
 ax2.set_xticklabels(cat_order, rotation=20)
 ax2.set_ylabel("Percent of deaths")

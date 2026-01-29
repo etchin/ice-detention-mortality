@@ -1,6 +1,6 @@
 # Source Documents Guide
 
-This document provides complete information on all primary data sources used in this analysis, with direct download links. ICE sources include per-death PDFs; CBP sources are counts-only (no per-death detail) and are not covered by the verification scripts.
+This document provides complete information on all primary data sources used in this analysis, with direct download links.
 
 ---
 
@@ -20,7 +20,7 @@ This document provides complete information on all primary data sources used in 
 - Facility type
 - Cause of death
 
-**Data Extracted:** All 172 deaths are included in `all_266_deaths_detailed.csv`
+**Data Extracted:** All 172 deaths are included in `all_274_deaths_detailed.csv`
 
 ---
 
@@ -30,13 +30,23 @@ This document provides complete information on all primary data sources used in 
 
 **Description:** Official ICE webpage listing all detainee deaths by fiscal year from FY2018 through FY2025. Each death links to an individual death report PDF.
 
-**Data Extracted:** All 94 deaths from FY2018-2025 are included in `all_266_deaths_detailed.csv` with individual PDF URLs for each death.
+**Data Extracted:** All 77 deaths from FY2018-2025 are included in `all_274_deaths_detailed.csv` with individual PDF URLs for each death.
+
+---
+
+### 3. Public Reporting Updates (CY2025 and January 2026)
+
+**Sources:**
+- https://www.theguardian.com/us-news/ng-interactive/2026/jan/04/ice-2025-deaths-timeline
+- https://www.theguardian.com/us-news/2026/jan/28/deaths-ice-2026-
+
+**Description:** Public reporting used to complete the CY2025 series and catalog deaths through January 29, 2026. These entries are flagged in the dataset and linked in the per‑death index.
 
 ---
 
 ## Individual Death Reports (FY2018-2025)
 
-Each of the 94 deaths from FY2018-2025 has an individual death report PDF available at ICE.gov. The URLs for all individual reports are included in the `PDF_URL` column of `all_266_deaths_detailed.csv`.
+Each of the 77 deaths from FY2018-2025 has an individual death report PDF available at ICE.gov. The URLs for all individual reports are included in the `PDF_URL` column of `all_274_deaths_detailed.csv`.
 
 **URL Pattern:**
 ```
@@ -46,7 +56,7 @@ https://www.ice.gov/doclib/foia/reports/ddr[LastName][FirstName].pdf
 **Example:**
 - Mirimanian, Gourgen: https://www.ice.gov/doclib/foia/reports/ddrMirimanianGourgen.pdf
 
-**To Access:** See the `PDF_URL` column in `all_266_deaths_detailed.csv` for the complete list of all 94 individual death report URLs.
+**To Access:** See the `PDF_URL` column in `all_274_deaths_detailed.csv` for the complete list of all 77 individual death report URLs.
 
 ---
 
@@ -68,18 +78,12 @@ https://www.ice.gov/doclib/foia/reports/ddr[LastName][FirstName].pdf
 ### FY2025: TRAC Immigration
 **Source:** Transactional Records Access Clearinghouse
 **URL:** https://tracreports.org/reports/753/
-**Note:** FY2025 ADP uses TRAC daily-series average (≈48,984) with sensitivities (Jan 12 snapshot 39,703; CY mean ≈51,130)
+**Note:** CY2025 ADP is estimated at 51,130 based on the TRAC daily‑series calendar‑year average; sensitivity analyses use 48,984 (FY mean) and 39,703 (Jan 12 snapshot).
 
----
-
-## CBP Sources (counts-only; not covered by verification scripts)
-
-### CBP OPR “CBP-Related Deaths” Reports (counts, no per-death detail)
-- FY2021: https://www.cbp.gov/document/report/fiscal-year-2021-office-professional-responsibility-cbp-related-deaths-report  
-- FY2022: https://www.cbp.gov/document/report/office-professional-responsibility-cbp-related-deaths-report-fy2022  
-- FY2023: https://www.cbp.gov/document/report/fiscal-year-2023-office-professional-responsibility-cbp-related-deaths-report  
-
-**Data Extracted:** Counts only (total, in-custody, CBP-involved, additional) in `data/cbp_deaths_summary.csv`. No age/sex/location/ADP available; not pooled with ICE and not validated by the ICE verification scripts.
+### January 2026 (partial): ICE FY2026 Detention Statistics
+**Source:** US Immigration and Customs Enforcement
+**URL:** https://www.ice.gov/doclib/detention/FY26_detentionStats01082026.xlsx
+**Note:** January 2026 ICE Average Daily Population (ADP = 58,998) used as a partial‑month denominator through January 29, 2026.
 
 ---
 
@@ -93,7 +97,7 @@ https://www.ice.gov/doclib/foia/reports/ddr[LastName][FirstName].pdf
    ```
 
 2. **Individual FY2018-2025 Death Reports:**
-   Use the URLs listed in `all_266_deaths_detailed.csv` (PDF_URL column)
+   Use the URLs listed in `all_274_deaths_detailed.csv` (PDF_URL column)
 
 ### Method 2: Browser Download
 
@@ -109,11 +113,12 @@ To verify the completeness and accuracy of the extracted data:
 
 1. **Compare death counts:**
    - ICE 2003-2017 PDF: 172 deaths
-   - ICE FY2018-2025 webpage: 94 deaths
-   - Total: 266 deaths ✓
+   - ICE FY2018-2025 webpage: 77 deaths
+   - Public reporting updates (CY2025 + Jan 2026): 25 deaths
+   - Total: 274 deaths ✓
 
 2. **Verify individual deaths:**
-   - Each death in `all_266_deaths_detailed.csv` includes the source PDF URL
+   - Each death in `all_274_deaths_detailed.csv` includes the source PDF URL
    - Cross-reference names, dates, and causes of death with source documents
 
 3. **Check for updates:**
@@ -151,4 +156,4 @@ For questions about specific deaths or to request additional information:
 
 ---
 
-**Last Updated:** December 2025
+**Last Updated:** November 15, 2025

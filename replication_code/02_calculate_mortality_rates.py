@@ -30,7 +30,7 @@ cutpoints = [
     ("Obama", datetime(2009, 1, 20), datetime(2017, 1, 19)),
     ("Trump 1", datetime(2017, 1, 20), datetime(2021, 1, 19)),
     ("Biden", datetime(2021, 1, 20), datetime(2025, 1, 19)),
-    ("Trump 2", datetime(2025, 1, 20), datetime(2025, 12, 31)),
+    ("Trump 2", datetime(2025, 1, 20), datetime(2026, 1, 29)),
 ]
 
 def admin_by_date(d):
@@ -40,18 +40,26 @@ def admin_by_date(d):
     return None
 
 deaths_df['date_of_death'] = pd.to_datetime(deaths_df['date_of_death'])
-deaths_df['admin_by_date'] = deaths_df['date_of_death'].apply(admin_by_date)
-if not (deaths_df['admin_by_date'] == deaths_df['administration']).all():
-    mismatches = deaths_df.loc[deaths_df['admin_by_date'] != deaths_df['administration'], ['date_of_death','administration','admin_by_date']]
+analysis_end = datetime(2026, 1, 29)
+analysis_df = deaths_df[deaths_df['date_of_death'] <= analysis_end].copy()
+analysis_df['admin_by_date'] = analysis_df['date_of_death'].apply(admin_by_date)
+if not (analysis_df['admin_by_date'] == analysis_df['administration']).all():
+    mismatches = analysis_df.loc[analysis_df['admin_by_date'] != analysis_df['administration'], ['date_of_death','administration','admin_by_date']]
     raise ValueError(f"Administration assignment mismatch for some rows based on date-of-death.\n{mismatches.head()}\nPlease ensure 'administration' is assigned by date of death.")
 
 results = []
 for admin, (start_fy, end_fy) in admin_fy_ranges.items():
-    admin_deaths = deaths_df[deaths_df["administration"] == admin]
+    admin_deaths = analysis_df[analysis_df["administration"] == admin]
     death_count = len(admin_deaths)
     
     admin_adp = adp_df[(adp_df["fiscal_year"] >= start_fy) & (adp_df["fiscal_year"] <= end_fy)]
     person_years = admin_adp["adp"].sum()
+
+    # Add partial January 2026 person-time for Trump 2 (ICE Average Jan 2026 ADP = 58,998)
+    if admin == "Trump 2":
+        jan_2026_adp = 58998
+        jan_2026_days = 29
+        person_years += jan_2026_adp * (jan_2026_days / 365)
     
     rate = (death_count / person_years) * 100000
     ci_lower, ci_upper = calculate_poisson_ci(death_count, person_years)

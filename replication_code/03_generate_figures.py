@@ -16,7 +16,7 @@ base_dir = os.path.join(os.path.dirname(__file__), "..", "data")
 mortality_df = pd.read_csv(os.path.join(base_dir, "mortality_rates_by_administration.csv"))
 deaths_df = pd.read_csv(os.path.join(base_dir, "complete_death_records.csv"))
 adp_df = pd.read_csv(os.path.join(base_dir, "average_daily_population.csv"))
-details_df = pd.read_csv(os.path.join(base_dir, "all_266_deaths_detailed.csv"))
+details_df = pd.read_csv(os.path.join(base_dir, "all_274_deaths_detailed.csv"))
 cbp_df = pd.read_csv(os.path.join(base_dir, "cbp_deaths_summary.csv"))
 
 # Figure 1
@@ -47,6 +47,8 @@ plt.close()
 #  - Panel C: Mortality rates by fiscal year
 # Build per-year aggregates (FY for historical years; calendar year for 2024–2025)
 details_df['Date_of_Death'] = pd.to_datetime(details_df['Date_of_Death'])
+analysis_end = datetime(2026, 1, 29)
+details_df = details_df[details_df['Date_of_Death'] <= analysis_end].copy()
 def fiscal_year_for_plot(d):
     # Use calendar year for 2024–2025 to align with full CY2025 updates
     if d.year >= 2024:
@@ -68,6 +70,20 @@ for fy in sorted(adp_df_fy['fiscal_year'].unique()):
         'deaths': deaths,
         'rate': rate,
         'administration': adp_row['administration'].values[0],
+    })
+
+# Add partial-year 2026 point using ICE-reported January ADP (58,998) and 29 days
+partial_2026_days = 29
+jan_2026_adp = 58998
+deaths_2026 = (details_df['Date_of_Death'].dt.year == 2026).sum()
+if deaths_2026 > 0:
+    rate_2026 = (deaths_2026 / (jan_2026_adp * (partial_2026_days / 365))) * 100000
+    fy_rows.append({
+        'fiscal_year': 2026,
+        'adp': jan_2026_adp,
+        'deaths': deaths_2026,
+        'rate': rate_2026,
+        'administration': 'Trump 2',
     })
 fy_df = pd.DataFrame(fy_rows).sort_values('fiscal_year')
 
