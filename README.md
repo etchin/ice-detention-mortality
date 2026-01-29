@@ -1,4 +1,4 @@
-# ICE Detention Mortality Analysis: Complete Package (FY2004–Jan 2026)
+# ICE Detention Mortality Analysis
 
 **All 274 Deaths with Complete Details**
 
@@ -179,26 +179,3 @@ See `medical_review/COMPLETE_MEDICAL_REVIEW.md` for:
 **To access source PDFs:**
 - Web browser with PDF support
 
----
-
-## Citation
-
-If using this data or analysis, please cite:
-
-> Mortality in U.S. Immigration and Customs Enforcement Detention, Fiscal Years 2004-2025: An Epidemiological Analysis. [Journal], 2025.
-
----
-
-## Contact
-
-For questions about the data or methodology, refer to:
-- Manuscript and appendix for complete methods
-- Source documents guide for data sources
-- Medical review summary for clinical analysis
-
----
-
-**Package Version:** 2.2 (Complete - All 274 Deaths)
-**Last Updated:** January 2026 (age and facility location fully populated for all 274 deaths via FOIA PDF extraction, ICE individual reports, and public reporting updates)
-**Total Deaths:** 274 (FY2004–Jan 2026)
-**Complete Data:** 100%
