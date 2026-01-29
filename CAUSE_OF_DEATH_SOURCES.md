@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document explains where the cause of death information comes from for all ICE deaths in the dataset (266 deaths; filename retained as `all_266_deaths_detailed.csv`). CBP deaths are counts-only and do not include causes.
+This document explains where the cause of death information comes from for all 274 deaths in the dataset.
 
 ---
 
@@ -30,7 +30,7 @@ This document explains where the cause of death information comes from for all I
 
 ---
 
-### FY2018-2025 Deaths (94 deaths)
+### FY2018-2025 Deaths (77 deaths)
 
 **Source:** Individual ICE Death Report PDFs
 
@@ -44,13 +44,25 @@ This document explains where the cause of death information comes from for all I
 - Some reports state "Pending Autopsy and Medical Examiner Report"
 - Some reports state "Not stated"
 
-**Examples from the data (ICE DDRs):**
+**Examples from the data:**
 - "Cardiopulmonary arrest due to complications from HIV, septic shock, anemia, dehydration, and T-cell lymphoma" (detailed)
 - "Coronary artery disease" (final)
 - "Pending Autopsy and Medical Examiner Report. Preliminary information indicates the death was due to natural causes" (preliminary)
 - "Not stated" (no information available)
 
-**Data Quality:** Individual death reports provide varying levels of detail. Some include complete medical examiner findings, while others only have preliminary information. CBP death counts do not provide cause data.
+**Data Quality:** Individual death reports provide varying levels of detail. Some include complete medical examiner findings, while others only have preliminary information.
+
+---
+
+### Public Reporting Updates (CY2025 and January 2026; 25 deaths)
+
+**Source:** Public reporting (Guardian timeline and January 2026 update list)
+
+**URL:** https://www.theguardian.com/us-news/ng-interactive/2026/jan/04/ice-2025-deaths-timeline and https://www.theguardian.com/us-news/2026/jan/28/deaths-ice-2026-
+
+**Cause-of-death detail:** Varies by report; summarized from public reporting and linked source documents.
+
+**Data Quality:** Public reporting provides descriptive summaries and context for cases not yet listed in ICE individual reports. These entries are included to complete CY2025 and January 2026 counts; they are flagged as public reporting updates in the dataset.
 
 ---
 
@@ -59,21 +71,26 @@ This document explains where the cause of death information comes from for all I
 | Period | Source | Adjudication | Detail Level | Completeness |
 |:-------|:-------|:-------------|:-------------|:-------------|
 | FY2003-2017 | Master PDF | **Final** (adjudicated) | Moderate | 100% (all 172 have causes) |
-| FY2018-2025 | Individual PDFs | **Mixed** (some final, some preliminary) | High (when available) | 100% (all 94 have some information) |
+| FY2018-2025 | Individual PDFs | **Mixed** (some final, some preliminary) | High (when available) | 100% (all 77 have some information) |
+| CY2025 + Jan 2026 | Public reporting | **Mixed/uncertain** | Variable | 100% (all 25 have summarized causes) |
 
 ---
 
 ## Key Findings
 
-### 1. All ICE Deaths Have Cause Information (266)
+### 1. All 274 Deaths Have Cause Information
 
-Every ICE death in the dataset includes cause of death information, though the level of detail varies. CBP deaths are reported as counts only (no cause fields) and are tracked separately in `cbp_deaths_summary.csv`.
+Every death in the dataset includes cause of death information, though the level of detail varies.
 
 ### 2. FY2003-2017 Causes Are Adjudicated
 
 The ICE master PDF explicitly labels causes as "FINAL CAUSE OF DEATH," indicating these have been officially determined by medical examiners or coroners.
 
 ### 3. FY2018-2025 Causes Are Mixed
+
+### 4. Public Reporting Updates Fill Recent Gaps
+
+Public reporting contributes 25 additional deaths (CY2025 and January 2026) with summarized cause-of-death details and linked sources until official ICE reports are released.
 
 Individual death reports include:
 - **Final causes:** Officially adjudicated by medical examiners
@@ -95,11 +112,11 @@ Individual death reports include:
 1. Download the master PDF: https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf
 2. Open the PDF and locate the death record
 3. Check the "FINAL CAUSE OF DEATH" column
-4. Compare with the cause listed in `all_266_deaths_detailed.csv`
+4. Compare with the cause listed in `all_274_deaths_detailed.csv`
 
 ### To Verify FY2018-2025 Causes
 
-1. Open `all_266_deaths_detailed.csv`
+1. Open `all_274_deaths_detailed.csv`
 2. Find the death of interest
 3. Copy the URL from the "PDF URL" column
 4. Open the PDF in a browser
@@ -136,7 +153,7 @@ When analyzing causes of death, prioritize deaths with final adjudicated causes 
 
 ### 2. Verify Recent Deaths
 
-For FY2018-2025 deaths (94), check the individual PDFs to determine whether the cause is preliminary or final.
+For FY2018-2025 deaths, check the individual PDFs to determine whether the cause is preliminary or final.
 
 ### 3. Request Updates
 
@@ -150,14 +167,14 @@ When categorizing causes (e.g., "cardiovascular," "suicide"), review the actual 
 
 ## Data Files
 
-**Primary Data (ICE):** `all_266_deaths_detailed.csv` (266 ICE deaths; filename retained)
+**Primary Data:** `all_274_deaths_detailed.csv`
 - Column: "Cause_of_Death"
-- All ICE deaths included
+- All 274 deaths included
 - Source PDFs listed in "PDF_URL" column
 
 **Source PDFs:**
 - FY2003-2017: Single master PDF (included in package)
-- FY2018-2025: 94 individual PDFs (included in `death_report_pdfs/`)
+- FY2018-2025: 77 individual PDFs (to be downloaded)
 
 ---
 
@@ -167,13 +184,12 @@ The cause of death information in this dataset comes directly from official ICE 
 
 - **FY2003-2017:** Final adjudicated causes from ICE master PDF
 - **FY2018-2025:** Mix of final and preliminary causes from individual death reports
-- **CBP:** Counts only; no cause-of-death detail is provided in the public OPR reports.
 
 All causes are verifiable by accessing the source PDFs listed in the dataset. Medical reviewers should be aware that some FY2018-2025 causes are preliminary and may be subject to change pending final autopsy results.
 
 ---
 
-**Last Updated:** December 2025
-**ICE Deaths:** 266 (causes available for 266)
-**CBP Deaths:** Counts only (no causes; see `data/cbp_deaths_summary.csv`)
-**Final Adjudicated:** 172 (FY2003-2017) + mixed status FY2018-2025
+**Last Updated:** November 15, 2025
+**Total Deaths:** 274
+**Causes Available:** 274 (100%)
+**Final Adjudicated:** 172 (FY2003-2017) + unknown number from FY2018-2025

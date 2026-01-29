@@ -1,6 +1,6 @@
 # Supplement
 
-## Mortality in U.S. Immigration and Customs Enforcement Detention, FY2004-2025
+## Mortality in U.S. Immigration and Customs Enforcement Detention, FY2004–Jan 2026
 
 **Authors:** Sanjay Basu, MD, PhD<sup>1</sup>*; Benjamin Huynh, PhD<sup>2</sup>; Mathew V. Kiang, ScD<sup>3</sup>; Elizabeth Chin, PhD, MPH<sup>4</sup>; Jason R. Andrews, MD, MS<sup>5</sup>
 
@@ -13,7 +13,7 @@
 
 **Corresponding Author:** Sanjay Basu, MD, PhD (sanjay.basu@ucsf.edu)
 
-**Date:** December 2025
+**Date:** January 2026
 
 ---
 
@@ -31,10 +31,11 @@ Data on in-custody deaths were compiled from two official ICE sources:
 
 1. Historical deaths (FY2004–2017): a 35‑page FOIA release listing all in‑custody deaths from October 1, 2003 through September 30, 2017.<sup>1</sup>
 2. Recent deaths (FY2018–2025): the ICE Detainee Death Reporting webpage, which provides individual death announcements and detailed reports.<sup>2</sup>
+3. Public reporting updates: calendar‑year 2025 and January 2026 deaths compiled from public reporting and linked in the per‑death index.
 
-We extracted all records and de‑duplicated on name and date of death to construct a complete dataset of 266 unique deaths from FY2004 through FY2025 (with calendar‑year 2025 updates). The dataset is provided in `complete_death_records.csv` and the fully detailed file in `all_266_deaths_detailed.csv` (file name retained from earlier versions; it contains 266 rows).
+We extracted all records and de‑duplicated on name and date of death to construct a complete dataset of 274 unique deaths from FY2004 through January 29, 2026 (with calendar‑year 2025 and January 2026 updates). The dataset is provided in `complete_death_records.csv` and the fully detailed file in `all_274_deaths_detailed.csv` (it contains 274 rows).
 
-**Data completeness.** Cause‑of‑death information is present for all 266 deaths. Dates of death are reconciled and complete. Age is missing for 1 death; facility location is complete for all years: FY2003–2017 values were computed from the FOIA table (date of birth and last detention location) and FY2018–2025 values were taken from individual reports.
+**Data completeness.** Cause‑of‑death information is present for all 274 deaths. Dates of death are reconciled and complete. Age is missing for 1 death; facility location is complete for all years: FY2003–2017 values were computed from the FOIA table (date of birth and last detention location) and FY2018–2025 values were taken from individual reports.
 
 ### Average Daily Population (ADP)
 
@@ -42,7 +43,7 @@ Average Daily Population (ADP) is the standard denominator for custody mortality
 
 ### Data Quality Assurance
 
-We undertook several steps to ensure data quality and accuracy. First, annual death counts from raw extractions were cross‑checked against the final analytic tables. Second, deaths were assigned to administrations by actual date of death, and assignments were programmatically verified. Third, additional 2025 deaths were identified in public reporting to complete the CY2025 series; these records are linked in the per‑death index and included in the analytic dataset (32 total deaths in CY2025). Fourth, for FY2003–2017, we parsed the FOIA PDF using lattice‑based table extraction (camelot) to capture all 172 rows; ages were computed from dates of birth and death, and facility locations from “location of last detention.” Fuzzy string matching reconciled spelling variants (e.g., Jiminez/Jimenez). Final completeness checks confirm no missing values across sex, facility name, facility location, facility type, cause of death, and date of death in `all_266_deaths_detailed.csv`; age is missing for 1 record.
+We undertook several steps to ensure data quality and accuracy. First, annual death counts from raw extractions were cross‑checked against the final analytic tables. Second, deaths were assigned to administrations by actual date of death, and assignments were programmatically verified. Third, additional 2025 deaths were identified in public reporting to complete the CY2025 series, and January 2026 deaths were cataloged through January 29, 2026; these records are linked in the per‑death index and included in the analytic dataset (32 total deaths in CY2025; 8 deaths through January 29, 2026). Fourth, for FY2003–2017, we parsed the FOIA PDF using lattice‑based table extraction (camelot) to capture all 172 rows; ages were computed from dates of birth and death, and facility locations from “location of last detention.” Fuzzy string matching reconciled spelling variants (e.g., Jiminez/Jimenez). Final completeness checks confirm no missing values across sex, facility name, facility location, facility type, cause of death, and date of death in `all_274_deaths_detailed.csv`; age is missing for 1 record.
 
 For CBP, OPR reports provide aggregate counts only (no demographics) beginning in FY2021, while FDCRP statistical tables provide arrest‑related and in‑custody counts for FY2016–FY2023. These sources are not pooled and are presented as counts because CBP fiscal‑year ADP is not publicly released. A merged case‑level file (`cbp_deaths_merged.csv`, with a filtered `cbp_deaths_in_custody.csv`) reconciles ACLU and Southern Border Communities Coalition lists (624 unique CBP‑related deaths; 61 in‑custody) for transparency; because inclusion rules differ, these files are not used for rate estimation.
 
@@ -54,11 +55,11 @@ For CBP, OPR reports provide aggregate counts only (no demographics) beginning i
 
 #### Study Design
 
-We conducted a retrospective cohort study of all individuals detained in ICE custody from October 1, 2003 to December 31, 2025.
+We conducted a retrospective cohort study of all individuals detained in ICE custody from October 1, 2003 to January 29, 2026.
 
 #### Administration Assignment
 
-Deaths were assigned to administrations by date of death with periods defined as: Bush (January 20, 2001–January 19, 2009), Obama (January 20, 2009–January 19, 2017), Trump 1 (January 20, 2017–January 19, 2021), Biden (January 20, 2021–January 19, 2025), and Trump 2 (January 20, 2025–December 31, 2025).
+Deaths were assigned to administrations by date of death with periods defined as: Bush (January 20, 2001–January 19, 2009), Obama (January 20, 2009–January 19, 2017), Trump 1 (January 20, 2017–January 19, 2021), Biden (January 20, 2021–January 19, 2025), and Trump 2 (January 20, 2025–January 29, 2026). Rate analyses extend through January 29, 2026 using ICE‑reported January 2026 ADP (58,998) as a partial‑month denominator; as an average daily population for the period, this denominator is not expected to systematically underestimate person‑time.<sup>15</sup>
 
 #### Statistical Analysis
 
@@ -119,16 +120,17 @@ Reproduction steps
 
 Outputs
 
-- Figures: repository `manuscript/Figure*.png` (Figure 2 has three panels: ADP, deaths, and mortality rates, starting at FY2004; 2025 uses calendar-year deaths and the CY2025 ADP)
+- Figures: repository `manuscript/Figure*.png` (Figure 2 has three panels: ADP, deaths, and mortality rates, starting at FY2004; 2025 uses calendar-year deaths and the CY2025 ADP; calendar-year ADP is not publicly reported for all prior years, so fiscal-year ADP averages are used for earlier denominators)
 - CBP counts figure: `manuscript/Appendix_Figure_A3.png` (eFigure 3; counts only; ADP not publicly released at fiscal-year level)
 - Table 1 data: derived from ICE and TRAC public reports (see eTable 1); the generated table is included in the repository’s data outputs
 - Verification logs: repository `verification/` (PDF checks, cause audit, FOIA crosswalk)
 - Supplement figures: `manuscript/Appendix_Figure_A1_operator.png`, `manuscript/Appendix_Figure_A2_cause.png` (eFigures 1-2)
 - CBP source documents: OPR “CBP-Related Deaths” reports for FY2021–FY2023 (see data/cbp_deaths_summary.csv for counts extracted)
 
-Denominator (2025)
+Denominator (2025–Jan 2026)
 
 - TRAC daily series (see eTable 1, TRAC report): CY mean (≈51,130) used in base case; FY mean (≈48,984) and Jan‑12 snapshot (39,703) included in sensitivity (eTable 3).
+- ICE FY2026 detention statistics: January 2026 ICE Average Daily Population (ADP = 58,998) used as a partial‑month denominator through January 29, 2026.
 
 ---
 
@@ -142,6 +144,7 @@ Denominator (2025)
 | 2007–2009 | ICE Total Removals Report | https://www.ice.gov/doclib/about/offices/ero/pdf/ice-removals-2009.pdf | Extracted from historical annual reports. |
 | 2010–2024 | ICE Enforcement and Removal Operations Reports | https://www.ice.gov/statistics | Annual ICE statistical reports. |
 | 2025 | TRAC Immigration | https://tracreports.org/reports/753/ | ICE has not published FY2025 ADP; analyses use the TRAC CY2025 daily-series average (≈51,130) with sensitivity at the FY2025 mean (≈48,984) and the Jan 12 snapshot (39,703). |
+| 2026 (Jan 1–29) | US Immigration and Customs Enforcement | https://www.ice.gov/doclib/detention/FY26_detentionStats01082026.xlsx | January 2026 ICE ADP (58,998) from FY2026 detention statistics updated January 8, 2026; used as a partial‑month denominator. |
 
 Legend. ADP sources used to compute person‑years for mortality estimates by fiscal year and administration.
 
@@ -153,7 +156,7 @@ Legend. ADP sources used to compute person‑years for mortality estimates by fi
 | Obama | 67 | 46 | 43.3 | 19–72 | 57 | 10 |
 | Trump 1 | 42 | 46.5 | 46.6 | 21–74 | 40 | 2 |
 | Biden | 26 | 39.5 | 42.5 | 23–61 | 24 | 2 |
-| Trump 2 | 32 | 45 | 46.6 | 25–75 | 31 | 1 |
+| Trump 2 | 40 | 44 | 46.2 | 25–75 | 38 | 2 |
 
 Legend. Age statistics were computed from dates of birth and death; age is missing for 1 death in Trump 2. Sex counts derive from ICE reports and the FOIA table.
 
@@ -161,11 +164,11 @@ Legend. Age statistics were computed from dates of birth and death; age is missi
 
 | Scenario | Bush | Obama | Trump 1 | Biden | Trump 2 |
 | :------- | ---: | ----: | ------: | ----: | ------: |
-| Base (TRAC CY2025 ADP ≈ 51,130) | 79.17 | 24.99 | 26.54 | 23.35 | 62.59 |
+| Base (TRAC CY2025 ADP ≈ 51,130 + Jan 2026 ADP = 58,998) | 79.17 | 24.99 | 26.54 | 23.35 | 71.66 |
 | Exclude 2025 | 79.17 | 24.99 | 26.54 | 20.66 | — |
-| FY2025 ADP ≈ 48,984 (TRAC) | 79.17 | 24.99 | 26.54 | 23.35 | 65.33 |
-| Jan 12, 2025 snapshot (ADP = 39,703) | 79.17 | 24.99 | 26.54 | 23.35 | 80.60 |
-| Excluding COVID‑19 deaths | 79.17 | 24.99 | 21.49 | 20.66 | 62.59 |
+| FY2025 ADP ≈ 48,984 (TRAC) + Jan 2026 ADP | 79.17 | 24.99 | 26.54 | 23.35 | 74.53 |
+| Jan 12, 2025 snapshot (ADP = 39,703) + Jan 2026 ADP | 79.17 | 24.99 | 26.54 | 23.35 | 90.11 |
+| Excluding COVID‑19 deaths | 79.17 | 24.99 | 21.49 | 20.66 | 71.66 |
 
 Legend. Rates recomputed under alternative denominators and removing COVID‑19‑attributed deaths. Relative administration patterns are robust.
 
@@ -221,37 +224,37 @@ Legend. Examples of spelling harmonization for exact matching between FOIA entri
 
 Legend. Facilities with the largest number of deaths across all years. Counts reflect events rather than rates; facility‑specific person‑time is not available.
 
-### eTable 7. Cause-of-death distribution, FY2004–FY2025 (N = 266)
+### eTable 7. Cause-of-death distribution, FY2004–Jan 2026 (N = 274)
 
 | Category | Count | Percent |
 | :------- | ----: | ------: |
-| Cardiovascular | 54 | 20.3 |
-| Infectious (incl. COVID-19) | 42 | 15.8 |
-| Neurologic | 18 | 6.8 |
-| Suicide | 20 | 7.5 |
-| Other/Undetermined | 132 | 49.6 |
+| Cardiovascular | 56 | 20.4 |
+| Infectious (incl. COVID-19) | 42 | 15.3 |
+| Neurologic | 18 | 6.6 |
+| Suicide | 23 | 8.4 |
+| Other/Undetermined | 135 | 49.3 |
 
 Legend. Broad categories are assigned using a conservative keyword approach applied to the cause-of-death text in official ICE sources (FOIA table and individual death reports). Categories are mutually exclusive and may reflect preliminary or final determinations in recent reports.
 
-### eTable 8. Cause-of-death distribution, FY2018–FY2025 (N = 94)
+### eTable 8. Cause-of-death distribution, FY2018–FY2026 (N = 102)
 
 | Category | Count | Percent |
 | :------- | ----: | ------: |
-| Cardiovascular | 18 | 19.1 |
-| Infectious (incl. COVID-19) | 23 | 24.5 |
-| Neurologic | 7 | 7.4 |
-| Suicide | 13 | 13.8 |
-| Other/Undetermined | 33 | 35.1 |
+| Cardiovascular | 20 | 19.6 |
+| Infectious (incl. COVID-19) | 23 | 22.5 |
+| Neurologic | 7 | 6.9 |
+| Suicide | 16 | 15.7 |
+| Other/Undetermined | 36 | 35.3 |
 
-Legend. Distribution among deaths with individual ICE reports (FY2018–FY2025). Category definitions follow eTable 7.
+Legend. Distribution among deaths with individual ICE reports and public reporting updates (FY2018–FY2026). Category definitions follow eTable 7.
 
-### eTable 9. Facility operator-type distribution (all years and FY2018–FY2025)
+### eTable 9. Facility operator-type distribution (all years and FY2018–FY2026)
 
-| Operator type | All years (N=266) | Percent | FY2018–FY2025 (N=94) | Percent |
+| Operator type | All years (N=274) | Percent | FY2018–FY2026 (N=102) | Percent |
 | :------------ | -----------------: | ------: | --------------------: | ------: |
-| Private/Contracted | 63 | 23.7 | 38 | 40.4 |
-| Government/Intergov | 156 | 58.6 | 14 | 14.9 |
-| Other/Unstated | 47 | 17.7 | 42 | 44.7 |
+| Private/Contracted | 63 | 23.0 | 38 | 37.3 |
+| Government/Intergov | 156 | 56.9 | 14 | 13.7 |
+| Other/Unstated | 55 | 20.1 | 50 | 49.0 |
 
 Legend. Operator-type groups are derived from facility categories reported by ICE: Private/Contracted includes Contract, CDF, and USMS CDF; Government/Intergov includes SPC/ICE-operated, IGSA/DIGSA, BOP, and USMS IGA; Other/Unstated includes Hospital, HOLD, STAGING, and Not stated. These are descriptive counts; person‑time by operator is not publicly available, so operator‑specific mortality rates cannot be computed.
 
@@ -270,7 +273,7 @@ Legend. Operator-type groups are derived from facility categories reported by IC
 
 Legend. Federal Deaths in Custody Reporting Program (FDCRP) tables count arrest-related deaths (including use of force, pursuits, transport, and temporary holding) and in-custody deaths under a standardized federal definition. OPR “CBP-related deaths” are broader and include deaths in the presence of CBP personnel (e.g., rescues, environmental exposure, medical emergencies) as well as in-custody deaths; OPR series begin in FY2021. Fiscal-year CBP ADP is not publicly released, so results are presented as counts and not pooled with ICE.
 
-### eTable 11. Data dictionary for `all_266_deaths_detailed.csv`
+### eTable 11. Data dictionary for `all_274_deaths_detailed.csv`
 
 | Column | Definition |
 | :----- | :--------- |
@@ -284,13 +287,13 @@ Legend. Federal Deaths in Custody Reporting Program (FDCRP) tables count arrest-
 | Facility_Location | City/state or descriptor for facility location. |
 | Facility_Type | Facility category (e.g., IGSA, CDF, DIGSA, SPC, BOP, etc.). |
 | PDF_URL | Primary official source URL for the death (FOIA list or individual report). |
-| Period | FY2003–2017 (FOIA table) or FY2018–2025 (individual reports). |
+| Period | FY2003–2017 (FOIA table), FY2018–2025 (individual reports), or public reporting updates (CY2025 and January 2026). |
 
 Legend. Column definitions for the primary analytic dataset used for all tabulations and figures.
 
 ### eTable 12. Per-death primary-source URL index
 
-This table lists every death (N = 266) with key details and the primary official source URL.
+This table lists every death (N = 274) with key details and the primary official source URL.
 
 | Name | Sex | Age | Country | Date of Death | Facility | Location | Type | Cause of Death | Source URL |
 | :--- | :-- | --: | :------ | :------------ | :------ | :------- | :--- | :------------- | :--------- |
@@ -302,16 +305,16 @@ This table lists every death (N = 266) with key details and the primary official
 | POPOOLA ADETUNJI | Male | 48 | NIGERIA | 2004-02-02 | Dallas County Jail TX | Dallas County Jail, TX | IGSA | Cardia Arrhythmia | https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf |
 | RIOZ-MARTINEZ CEZAR | Male | 25 | MEXICO | 2004-02-13 | Prio County Jail TX | Frio County Jail, TX | IGSA | Asphyxia | https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf |
 | MOSLEY HECTOR | Male | 57 | PANAMA | 2004-02-27 | Columbia Care Center SC | Columbia Care Center, SC | HOSPITAL | AIDS | https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf |
-| RODRIGUEZ JOSE RANGEL | Male | 32 | GUATEMALA | 2004-03-03 | Kern County Jail Lerdo CA | Kern County Jail (Lerdo), CA | IGSA | Histoplasmosis Sepsis | https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf |
 | HERNANDEZ WILFREDO | Male | 65 | CUBA | 2004-03-03 | Columbia Care Center SC | Columbia Care  Center, SC | HOSPITAL | Coronary Artery Disease | https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf |
+| RODRIGUEZ JOSE RANGEL | Male | 32 | GUATEMALA | 2004-03-03 | Kern County Jail Lerdo CA | Kern County Jail (Lerdo), CA | IGSA | Histoplasmosis Sepsis | https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf |
 | SOLIS-PEREZ MARIA | Female | 44 | EL SALVADOR | 2004-03-06 | Jefferson County Jail TX | Jefferson County Jail, TX | IGSA | Subarachnoid Hemorrhage due to Ruptured Berry Aneurysm | https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf |
 | ALVAREZ-ARIAS JOSE DE LA CONCEPCION | Male | 46 | CUBA | 2004-03-10 | Allenwood Low Security Federal Correctional Institute PA | Allenwood Low Security Federal Correctional Institute, PA | BOP | Metastic Renal Clear Cell Carcinoma | https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf |
 | PEREZ-AYALA MANUEL | Male | 54 | CUBA | 2004-03-14 | Rochester Federal Medical Center MN | Rochester Federal Medical Center, MN | BOP | Sudden Cardiac Death | https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf |
 | MENDEZ-BACCA CARLOS | Male | 29 | HONDURAS | 2004-03-19 | Guadalupe City Jail TX | Guadalupe City Jail, TX | IGSA | AIDS | https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf |
 | SATKUNES-WARAN KANDIAH | Male | 39 | SRI LANKA | 2004-04-17 | Middlesex County Jail NJ | Middlesex County Jail, NJ | IGSA | Natural Causes | https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf |
 | FANKEU SAMOU | Male | 37 | CAMEROON | 2004-05-11 | INS Airport Hold KY | INS Airport Hold, IL | HOLD | AIDS | https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf |
-| RUST RICHARD | Male | 34 | JAMAICA | 2004-05-29 | Oakdale Federal Detention Center LA | Oakdale Federal Detention Center, LA | BOP | Cardiac Arrythmia | https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf |
 | FIGUEREDO-LOPEZ JUAN | Male | 45 | CUBA | 2004-05-29 | Springfield Federal Medical Center MO | Springfield Federal Medical Center, MO | BOP | Acute Pulmonary Embolis | https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf |
+| RUST RICHARD | Male | 34 | JAMAICA | 2004-05-29 | Oakdale Federal Detention Center LA | Oakdale Federal Detention Center, LA | BOP | Cardiac Arrythmia | https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf |
 | MENDEZ ENRIQUE | Male | 70 | MEXICO | 2004-06-14 | El Centro Service Processing Center CA | EL Centro Service Processing Center, CA | SPC | Metastic Carcinoma of Prostate Gland | https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf |
 | HERRERA-TERAN JOSE | Male | 71 | CUBA | 2004-06-15 | Pike County Correctional Facility PA | Pike County  Correctional  Facility, PA | IGSA | Myocardial Infarction | https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf |
 | MARTINEZ JOSE ALBERTO | Male | 47 | DOMINICAN REPUBLIC | 2004-07-28 | Hampton Roads Regional Jail VA | Hampton Roads Regional Jail, VA | USMS IGA | Sepsis | https://www.ice.gov/doclib/foia/reports/detaineedeaths-2003-2017.pdf |
@@ -550,8 +553,8 @@ This table lists every death (N = 266) with key details and the primary official
 | Xie, Huabing | Male |  | China | 2025-09-29 | El Centro Regional Medical Center | Calexico, CA | Not stated | Not stated | https://www.theguardian.com/us-news/ng-interactive/2026/jan/04/ice-2025-deaths-timeline |
 | Cruz-Silva, Leo | Male | 34 | Mexico | 2025-10-04 | Ste Genevieve County Jail | Ste Genevieve County, MO | Not stated | Apparent suicide (per ICE) | https://www.theguardian.com/us-news/ng-interactive/2026/jan/04/ice-2025-deaths-timeline |
 | Saleh, Hasan Ali Moh'D | Male | 67 | Jordan | 2025-10-11 | Krome North Service Processing Center (KSPC) | Miami, FL | ICE-operated | Cardiac arrest (preliminary) | https://www.theguardian.com/us-news/ng-interactive/2026/jan/04/ice-2025-deaths-timeline |
-| Castro Rivera, Josue | Male | 25 | Honduras | 2025-10-23 | ICE enforcement action (Norfolk) | Norfolk, VA | Not stated | Struck by vehicle while fleeing ICE agents | https://www.theguardian.com/us-news/ng-interactive/2026/jan/04/ice-2025-deaths-timeline |
 | Garcia Aviles, Gabriel | Male | 54 | Mexico | 2025-10-23 | Victor Valley Global Medical Center | Victorville, CA | Not stated | Complications of alcohol withdrawal (per ICE) | https://www.theguardian.com/us-news/ng-interactive/2026/jan/04/ice-2025-deaths-timeline |
+| Castro Rivera, Josue | Male | 25 | Honduras | 2025-10-23 | ICE enforcement action (Norfolk) | Norfolk, VA | Not stated | Struck by vehicle while fleeing ICE agents | https://www.theguardian.com/us-news/ng-interactive/2026/jan/04/ice-2025-deaths-timeline |
 | Wong, Kai Yin | Male | 63 | China | 2025-10-25 | Hospital in San Antonio, TX | San Antonio, TX | Not stated | Complications of heart failure and pneumonia | https://www.theguardian.com/us-news/ng-interactive/2026/jan/04/ice-2025-deaths-timeline |
 | Gaspar-Andres, Francisco | Male | 48 | Guatemala | 2025-12-03 | Hospital in El Paso, TX | El Paso, TX | Not stated | Suspected kidney and liver failure (per ICE) | https://www.theguardian.com/us-news/ng-interactive/2026/jan/04/ice-2025-deaths-timeline |
 | Montejo, Pete Sumalo | Male | 72 | Philippines | 2025-12-05 | Valley Baptist Medical Center | Harlingen, TX | Not stated | Septic shock from pneumonia (per ICE) | https://www.theguardian.com/us-news/ng-interactive/2026/jan/04/ice-2025-deaths-timeline |
@@ -560,6 +563,14 @@ This table lists every death (N = 266) with key details and the primary official
 | Abdulkadir, Fouad Saeed | Male | 46 | Eritrea | 2025-12-14 | Moshannon Valley Processing Center (MVPC) | Philipsburg, PA | Contract | Medical distress (per ICE) | https://www.theguardian.com/us-news/ng-interactive/2026/jan/04/ice-2025-deaths-timeline |
 | Rodriguez, Delvin Francisco | Male | 39 | Nicaragua | 2025-12-14 | Adams County Correctional Center | New Orleans, LA | Not stated | Cardiac arrest; died after ventilation (per ICE) | https://www.theguardian.com/us-news/ng-interactive/2026/jan/04/ice-2025-deaths-timeline |
 | Gantchev, Nenko Stanev | Male | 56 | Bulgaria | 2025-12-15 | North Lake Processing Center | Baldwin, MI | Contract | Not stated (under investigation) | https://www.theguardian.com/us-news/ng-interactive/2026/jan/04/ice-2025-deaths-timeline |
+| Campos, Geraldo Lunas | Male | 55 | Cuba | 2026-01-03 | Camp East Montana | El Paso, TX | Not stated | Homicide (neck injuries per autopsy; ICE reported suicide attempt). | https://www.theguardian.com/us-news/2026/jan/28/deaths-ice-2026- |
+| Nunez Caceres, Luis Gustavo | Male | 42 | Honduras | 2026-01-05 | HCA Houston Healthcare (Conroe) | Conroe, TX | Not stated | Heart-related condition (per ICE); died at HCA Houston Healthcare after transfer from Joe Corley Processing Center. | https://www.theguardian.com/us-news/2026/jan/28/deaths-ice-2026- |
+| Yanez-Cruz, Luis Beltran | Male | 68 | Honduras | 2026-01-06 | John F. Kennedy Memorial Hospital | Indio, CA | Not stated | Heart-related issues (per ICE); died at John F. Kennedy Memorial Hospital after transfer from Imperial Regional Detention Facility. | https://www.theguardian.com/us-news/2026/jan/28/deaths-ice-2026- |
+| Good, Renee Nicole | Female | 37 | Not stated | 2026-01-07 | ICE enforcement action (Minneapolis) | Minneapolis, MN | Not stated | Shot by a federal agent during a traffic stop (ICE-related death; not in custody). | https://www.theguardian.com/us-news/2026/jan/28/deaths-ice-2026- |
+| La, Parady | Male | 46 | Cambodia | 2026-01-09 | Thomas Jefferson University Hospital | Philadelphia, PA | Not stated | Organ failure after treatment for drug withdrawal; transferred from Federal Detention Center Philadelphia. | https://www.theguardian.com/us-news/2026/jan/28/deaths-ice-2026- |
+| Sanchez Dominguez, Heber | Male | 34 | Mexico | 2026-01-14 | Robert A. Deyton Detention Center | Lovejoy, GA | Not stated | Found hanging; death under investigation (ICE report). | https://www.theguardian.com/us-news/2026/jan/28/deaths-ice-2026- |
+| Diaz, Victor Manuel | Male | 36 | Nicaragua | 2026-01-14 | Camp East Montana | El Paso, TX | Not stated | Presumed suicide (ICE report; under investigation). | https://www.theguardian.com/us-news/2026/jan/28/deaths-ice-2026- |
+| Pretti, Alex | Male | 37 | Not stated | 2026-01-24 | ICE enforcement action (Minneapolis) | Minneapolis, MN | Not stated | Shot by federal agents during a protest (ICE-related death; not in custody). | https://www.theguardian.com/us-news/2026/jan/28/deaths-ice-2026- |
 
 ### eTable 13. STROBE checklist—cohort studies
 
@@ -603,17 +614,16 @@ Legend. STROBE checklist items and locations within the manuscript and supplemen
 
 ![eFigure 1: Operator-type distribution](Appendix_Figure_A1_operator.png)
 
-Legend. Grouped bars compare the distribution of deaths by operator type in all years (N = 266) versus FY2018–FY2025 (N = 94). See eTable 9 for exact counts and definitions.
+Legend. Grouped bars compare the distribution of deaths by operator type in all years (N = 274) versus FY2018–FY2026 (N = 102). See eTable 9 for exact counts and definitions.
 
 ### eFigure 2. Cause-of-death distribution (grouped, percent)
 
 ![eFigure 2: Cause-of-death distribution](Appendix_Figure_A2_cause.png)
 
-Legend. Grouped bars show the distribution of deaths by broad cause category in all years (N = 266) versus FY2018–FY2025 (N = 94). See eTables 7-8 for exact counts and definitions.
+Legend. Grouped bars show the distribution of deaths by broad cause category in all years (N = 274) versus FY2018–FY2026 (N = 102). See eTables 7-8 for exact counts and definitions.
 
 ### eFigure 3. CBP-related deaths by fiscal year (FY2021–FY2023)
 
 ![eFigure 3: CBP-related deaths](Appendix_Figure_A3.png)
 
 Legend. Panel A stacks in-custody deaths and other reported CBP-related deaths (CBP-involved and “additional requested”) by fiscal year. Panel B separates in-custody, CBP-involved (not in custody), and additional-requested counts. CBP ADP is not publicly released at fiscal-year resolution; CBP results are presented as counts only and are not pooled with ICE.
-
