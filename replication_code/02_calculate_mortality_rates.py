@@ -55,9 +55,9 @@ for admin, (start_fy, end_fy) in admin_fy_ranges.items():
     admin_adp = adp_df[(adp_df["fiscal_year"] >= start_fy) & (adp_df["fiscal_year"] <= end_fy)]
     person_years = admin_adp["adp"].sum()
 
-    # Add partial January 2026 person-time for Trump 2 (ICE Average Jan 2026 ADP = 58,998)
+    # Add partial January 2026 person-time for Trump 2 (ICE+CBP Average Jan 2026 ADP = 69,919.33)
     if admin == "Trump 2":
-        jan_2026_adp = 58998
+        jan_2026_adp = 69919.333333
         jan_2026_days = 29
         person_years += jan_2026_adp * (jan_2026_days / 365)
     

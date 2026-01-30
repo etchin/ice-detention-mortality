@@ -59,7 +59,7 @@ We conducted a retrospective cohort study of all individuals detained in ICE cus
 
 #### Administration Assignment
 
-Deaths were assigned to administrations by date of death with periods defined as: Bush (January 20, 2001–January 19, 2009), Obama (January 20, 2009–January 19, 2017), Trump 1 (January 20, 2017–January 19, 2021), Biden (January 20, 2021–January 19, 2025), and Trump 2 (January 20, 2025–January 29, 2026). Rate analyses extend through January 29, 2026 using ICE‑reported January 2026 ADP (58,998) as a partial‑month denominator; as an average daily population for the period, this denominator is not expected to systematically underestimate person‑time.<sup>15</sup>
+Deaths were assigned to administrations by date of death with periods defined as: Bush (January 20, 2001–January 19, 2009), Obama (January 20, 2009–January 19, 2017), Trump 1 (January 20, 2017–January 19, 2021), Biden (January 20, 2021–January 19, 2025), and Trump 2 (January 20, 2025–January 29, 2026). Rate analyses extend through January 29, 2026 using ICE‑reported January 2026 ADP (69,919) as a partial‑month denominator; as an average daily population for the period, this denominator is not expected to systematically underestimate person‑time.<sup>15</sup>
 
 #### Statistical Analysis
 
@@ -130,7 +130,7 @@ Outputs
 Denominator (2025–Jan 2026)
 
 - TRAC daily series (see eTable 1, TRAC report): CY mean (≈51,130) used in base case; FY mean (≈48,984) and Jan‑12 snapshot (39,703) included in sensitivity (eTable 3).
-- ICE FY2026 detention statistics: January 2026 ICE Average Daily Population (ADP = 58,998) used as a partial‑month denominator through January 29, 2026.
+- ICE FY2026 detention statistics: January 2026 ICE Average Daily Population (ADP = 69,919) used as a partial‑month denominator through January 29, 2026.
 
 ---
 
@@ -144,7 +144,7 @@ Denominator (2025–Jan 2026)
 | 2007–2009 | ICE Total Removals Report | https://www.ice.gov/doclib/about/offices/ero/pdf/ice-removals-2009.pdf | Extracted from historical annual reports. |
 | 2010–2024 | ICE Enforcement and Removal Operations Reports | https://www.ice.gov/statistics | Annual ICE statistical reports. |
 | 2025 | TRAC Immigration | https://tracreports.org/reports/753/ | ICE has not published FY2025 ADP; analyses use the TRAC CY2025 daily-series average (≈51,130) with sensitivity at the FY2025 mean (≈48,984) and the Jan 12 snapshot (39,703). |
-| 2026 (Jan 1–29) | US Immigration and Customs Enforcement | https://www.ice.gov/doclib/detention/FY26_detentionStats01082026.xlsx | January 2026 ICE ADP (58,998) from FY2026 detention statistics updated January 8, 2026; used as a partial‑month denominator. |
+| 2026 (Jan 1–29) | US Immigration and Customs Enforcement | https://www.ice.gov/doclib/detention/FY26_detentionStats01082026.xlsx | January 2026 ICE ADP (69,919) from FY2026 detention statistics updated January 8, 2026; used as a partial‑month denominator. |
 
 Legend. ADP sources used to compute person‑years for mortality estimates by fiscal year and administration.
 
@@ -164,11 +164,11 @@ Legend. Age statistics were computed from dates of birth and death; age is missi
 
 | Scenario | Bush | Obama | Trump 1 | Biden | Trump 2 |
 | :------- | ---: | ----: | ------: | ----: | ------: |
-| Base (TRAC CY2025 ADP ≈ 51,130 + Jan 2026 ADP = 58,998) | 79.17 | 24.99 | 26.54 | 23.35 | 71.66 |
+| Base (TRAC CY2025 ADP ≈ 51,130 + Jan 2026 ADP = 69,919) | 79.17 | 24.99 | 26.54 | 23.35 | 70.57 |
 | Exclude 2025 | 79.17 | 24.99 | 26.54 | 20.66 | — |
-| FY2025 ADP ≈ 48,984 (TRAC) + Jan 2026 ADP | 79.17 | 24.99 | 26.54 | 23.35 | 74.53 |
-| Jan 12, 2025 snapshot (ADP = 39,703) + Jan 2026 ADP | 79.17 | 24.99 | 26.54 | 23.35 | 90.11 |
-| Excluding COVID‑19 deaths | 79.17 | 24.99 | 21.49 | 20.66 | 71.66 |
+| FY2025 ADP ≈ 48,984 (TRAC) + Jan 2026 ADP | 79.17 | 24.99 | 26.54 | 23.35 | 73.34 |
+| Jan 12, 2025 snapshot (ADP = 39,703) + Jan 2026 ADP | 79.17 | 24.99 | 26.54 | 23.35 | 88.38 |
+| Excluding COVID‑19 deaths | 79.17 | 24.99 | 21.49 | 20.66 | 70.57 |
 
 Legend. Rates recomputed under alternative denominators and removing COVID‑19‑attributed deaths. Relative administration patterns are robust.
 

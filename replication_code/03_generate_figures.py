@@ -72,9 +72,9 @@ for fy in sorted(adp_df_fy['fiscal_year'].unique()):
         'administration': adp_row['administration'].values[0],
     })
 
-# Add partial-year 2026 point using ICE-reported January ADP (58,998) and 29 days
+# Add partial-year 2026 point using January ADP (ICE+CBP average = 69,919.33) and 29 days
 partial_2026_days = 29
-jan_2026_adp = 58998
+jan_2026_adp = 69919.333333
 deaths_2026 = (details_df['Date_of_Death'].dt.year == 2026).sum()
 if deaths_2026 > 0:
     rate_2026 = (deaths_2026 / (jan_2026_adp * (partial_2026_days / 365))) * 100000

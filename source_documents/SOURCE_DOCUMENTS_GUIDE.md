@@ -83,7 +83,7 @@ https://www.ice.gov/doclib/foia/reports/ddr[LastName][FirstName].pdf
 ### January 2026 (partial): ICE FY2026 Detention Statistics
 **Source:** US Immigration and Customs Enforcement
 **URL:** https://www.ice.gov/doclib/detention/FY26_detentionStats01082026.xlsx
-**Note:** January 2026 ICE Average Daily Population (ADP = 58,998) used as a partial‑month denominator through January 29, 2026.
+**Note:** January 2026 ICE Average Daily Population (ADP = 69,919) used as a partial‑month denominator through January 29, 2026.
 
 ---
 

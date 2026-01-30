@@ -1,4 +1,4 @@
-# ICE Detention Mortality Analysis
+# ICE Detention Mortality Analysis: Complete Package (FY2004–Jan 2026)
 
 **All 274 Deaths with Complete Details**
 
@@ -111,7 +111,7 @@ Complete Python scripts to reproduce all analyses:
 - Obama (2009-2017): 24.99 per 100k (67 deaths)
 - Trump 1 (2017-2021): 26.54 per 100k (42 deaths)
 - Biden (2021-2025): 23.35 per 100k (26 deaths)
-- Trump 2 (2025–Jan 29, 2026): 71.66 per 100k (40 deaths; January 2026 uses ICE‑reported ADP 58,998 as a partial‑month denominator)
+- Trump 2 (2025–Jan 29, 2026): 70.57 per 100k (40 deaths; January 2026 uses ICE‑reported ADP 69,919 as a partial‑month denominator)
 
 **Cause of Death (FY2018–2026, n=102):**
 - Cardiovascular: 20 deaths (19.6%)
@@ -179,3 +179,26 @@ See `medical_review/COMPLETE_MEDICAL_REVIEW.md` for:
 **To access source PDFs:**
 - Web browser with PDF support
 
+---
+
+## Citation
+
+If using this data or analysis, please cite:
+
+> Mortality in U.S. Immigration and Customs Enforcement Detention, Fiscal Years 2004-2025: An Epidemiological Analysis. [Journal], 2025.
+
+---
+
+## Contact
+
+For questions about the data or methodology, refer to:
+- Manuscript and appendix for complete methods
+- Source documents guide for data sources
+- Medical review summary for clinical analysis
+
+---
+
+**Package Version:** 2.2 (Complete - All 274 Deaths)
+**Last Updated:** January 2026 (age and facility location fully populated for all 274 deaths via FOIA PDF extraction, ICE individual reports, and public reporting updates)
+**Total Deaths:** 274 (FY2004–Jan 2026)
+**Complete Data:** 100%
