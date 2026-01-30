@@ -17,7 +17,7 @@ def calculate_poisson_ci(deaths, person_years, confidence=0.95):
 from datetime import datetime, timedelta
 
 cutpoints = [
-    ("Bush", datetime(2001, 1, 20), datetime(2009, 1, 19)),
+    ("Bush", datetime(2001, 10, 1), datetime(2009, 1, 19)),
     ("Obama", datetime(2009, 1, 20), datetime(2017, 1, 19)),
     ("Trump 1", datetime(2017, 1, 20), datetime(2021, 1, 19)),
     ("Biden", datetime(2021, 1, 20), datetime(2025, 1, 19)),
